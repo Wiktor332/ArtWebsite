@@ -2,6 +2,33 @@ import Link from "next/link"
 import Image from "next/image"
 import { NAV_LINKS } from "@/constants"
 import Button from "./Button"
+import Dropdown from "./Dropdown"
+
+export interface MenuItem {
+  title: string;
+  route?: string;
+  children?: MenuItem[];
+}
+
+const MenuItem: MenuItem[] = [
+  {
+    title: "Galeria prac",
+    children: [
+      {
+        title: "Obrazy",
+        route: "/gallery/obrazy",
+      },
+      {
+        title: "Rzeźby",
+        route: "/gallery/rzeźby",
+      },
+      {
+        title: "Szkice",
+        route: "/gallery/szkice",
+      },
+    ],
+  },
+];
 
 const Navbar = () => {
   return (
@@ -17,7 +44,6 @@ const Navbar = () => {
         </Link>
       ))}
     </ul>
-
     <div className="relative regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
       <Button type="button" title="PL"/>
     </div>
