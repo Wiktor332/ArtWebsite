@@ -1,11 +1,24 @@
 // NAVIGATION
 export const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Strona Główna' },
-    { href: '/', key: 'gallery', label: 'Galeria prac' },
-    { href: '/', key: 'events', label: 'Nadchodzące wydarzenia' },
-    { href: '/', key: 'kontakt', label: 'Kontakt' },
+    { href: '@/src/app/Home/page.tsx', key: 'home', label: 'Strona Główna' },
+    { href: '@/src/app/Gallery/page.tsx', key: 'gallery', label: 'Galeria prac' },
+    { href: '@/src/app/Events/page.tsx', key: 'events', label: 'Nadchodzące wydarzenia' },
+    { href: '@/src/app/Contact/page.tsx', key: 'kontakt', label: 'Kontakt' },
   ];
   
+
+// function NAVLINKS({inverted}: {inverted: boolean}) {
+//   return (
+//     <motion.div 
+//       className={clsx(
+//         'flex items-center gap-8 px-8 text-xl transition-all',
+//         inverted ? 'text-primary' : 'text-white'
+//       )}>
+//       <NavLink href='#home'>Home</NavLink>
+      
+//   )
+// }
+
   // CAMP SECTION
   export const PEOPLE_URL = [
     '/person-1.png',

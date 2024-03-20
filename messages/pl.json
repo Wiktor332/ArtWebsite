@@ -1,5 +1,17 @@
 {
-    "Index": {
+    "Home": {
       "title": "ArtWebsite dla Kasi!"
+    },
+
+    "Gallery": {
+      "title": "Witam w galerii"
+    },
+
+    "Events": {
+      "title": "Witam w wydarzeniach"
+    },
+
+    "Contact": {
+      "title": "Witam w kontakcie"
     }
   }
