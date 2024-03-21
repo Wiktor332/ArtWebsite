@@ -1,20 +1,18 @@
 
 import type { Metadata } from "next";
 import "@/src/app/ui/globals.css";
-// import Navbar from "@/components/App";
-import Footer from "@/components/Footer";
+import Navbar from "@/src/app/components/Navbar";
+import Footer from "@/src/app/components/Footer";
 
-import * as React from "react";
-
-import {NextUIProvider} from "@nextui-org/system";
-import App from "@/components/Navbar";
+// import Navigation from "@/components/Navbar";
+import Providers from "../providers";
 
 export const metadata: Metadata = {
   title: "ArtByKasiaKuta",
   description: "Description",
 };
 
-export default function LocalePage({
+export default function LocaleLayout({
   children,
   params: {locale}
 }: {
@@ -24,9 +22,11 @@ export default function LocalePage({
   return (
       <html lang={locale}>
         <body>
-          <App />
-          <main className="relative owerflow-hidden">{children}</main>
-          <Footer />
+          {/* <Providers > */}
+              <Navbar />
+                <main className="relative owerflow-hidden">{children}</main>
+              <Footer />
+          {/* </Providers > */}
         </body>
       </html>
   );
