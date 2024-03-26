@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
-import Link from 'next/link';
+'use client'
 
+import Link from "next/link";
+
+import { useState } from "react";
 import { MenuItem } from './Navbar';
 
 interface Props {
@@ -24,17 +26,19 @@ export default function Dropdown(props: Props) {
 
     return (
         <>
-            <div className="relative">
+            <div className="relative text-2xl font-mono">
                 <button
-                    className="hover:text-blue-400"
+                    className="relative group"
                     onClick={toggle}
-                >{item.title}</button>
-                <div className={`absolute top-8 z-30 w-[250px] min-h-[300px] flex flex-col py-4 bg-zinc-400 rounded-md ${transClass}`}>
+                >{item.title}
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                </button>
+                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-zinc-400 rounded-md ${transClass}`}>
                     {
                         menuItems.map(item =>
                             <Link
                                 key={item.route}
-                                className="hover:bg-zinc-300 hover:text-zinc-500 px-4 py-1"
+                                className="hover:bg-zinc-300 hover:text-zinc-500 px-2 py-1"
                                 href={item?.route || ''}
                                 onClick={toggle}
                             >{item.title}</Link>
