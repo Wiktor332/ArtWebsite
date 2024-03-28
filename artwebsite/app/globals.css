@@ -157,3 +157,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.hover\:underline:hover li:last-of-type p {
+  text-decoration: underline;
+}
