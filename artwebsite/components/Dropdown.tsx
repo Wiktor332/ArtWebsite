@@ -26,19 +26,19 @@ export default function Dropdown(props: Props) {
 
     return (
         <>
-            <div className="relative text-2xl font-mono">
+            <div className="relative text-2xl">
                 <button
-                    className="relative group"
+                    className="relative group hover:font-bold"
                     onClick={toggle}
                 >{item.title}
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
                 </button>
-                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-zinc-400 rounded-md ${transClass}`}>
+                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-green-400 rounded-md ${transClass}`}>
                     {
                         menuItems.map(item =>
                             <Link
                                 key={item.route}
-                                className="hover:bg-zinc-300 hover:text-zinc-500 px-2 py-1"
+                                className="hover:bg-green-300 hover:text-zinc-600 px-2 py-1"
                                 href={item?.route || ''}
                                 onClick={toggle}
                             >{item.title}</Link>
