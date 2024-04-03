@@ -28,6 +28,22 @@ module.exports = {
         yellow: {
           50: '#FEC601',
         },
+        artichokegreen: {
+         50: '#4B6F44',
+        },
+        aspargus: {
+          50: '#87A96B',
+        },
+        avocado: {
+          50: '#568203',
+        },
+        crocodile: { 
+          20: '#dedad4',
+          30: '#c9c4ba',
+          40: '#a19786',
+          50: '#796b52',
+          60: '#6d604a',
+        }
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",

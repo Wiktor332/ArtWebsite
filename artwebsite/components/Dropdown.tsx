@@ -33,7 +33,7 @@ export default function Dropdown(props: Props) {
                 >{item.title}
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
                 </button>
-                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-green-400 rounded-md ${transClass}`}>
+                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
                     {
                         menuItems.map(item =>
                             <Link
