@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Events() {
   return (
-    <div className="justify-center"> 
+    <div className="flex-col"> 
       <h1 className="font-mono text-3xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
         <ul className="font-mono text-2xl lis-outsite text-center">
           

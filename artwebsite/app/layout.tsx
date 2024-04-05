@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Dropdown from "@/components/Dropdown";
+import { ChakraProvider } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-aspargus-50">
-        <Navbar />
-          <main>
-            {children}
-          </main>
-        <Footer />  
+        <ChakraProvider>
+          <Navbar />
+            <main>
+              {children}
+            </main>
+          <Footer />
+        </ChakraProvider>  
       </body>
     </html>
   );

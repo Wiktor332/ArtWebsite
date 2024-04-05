@@ -4,8 +4,8 @@ import Image from "next/image"
 function page() {
   return (
     
-        <div className="relative flex justify-center mt-10">
-          <ul className="flex flex-wrap justify-center space-y-20 space-x-10">
+        <div className="relative flex justify-center mt-20">
+          <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
               <Image src="/images/painting/jesienna sonata.jpg olej na płotnie, 80x120 cm , 2023 rok.jpg" alt="photo" width={750} height={550} />
@@ -70,6 +70,21 @@ function page() {
             <li>
               <Image src="/images/painting/bez tytułu, olej na płótnie, 50x50, 2023 rok.jpg" alt="photo" width={750} height={550} />
               <p className="font-mono font-semibold">Bez tytułu, 50x50, 2023</p>
+            </li>
+
+            <li>
+              <Image src="/images/painting/_DSC0024.JPG" alt="photo" width={750} height={550} />
+              <p className="font-mono font-semibold">Bez tytułu</p>
+            </li>
+
+            <li>
+              <Image src="/images/painting/_DSC0034.JPG" alt="photo" width={750} height={550} />
+              <p className="font-mono font-semibold">Bez tytułu</p>
+            </li>
+
+            <li>
+              <Image src="/images/painting/1701860698641.jpg" alt="photo" width={750} height={550} />
+              <p className="font-mono font-semibold">Bez tytułu</p>
             </li>
 
           </ul>

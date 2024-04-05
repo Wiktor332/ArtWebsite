@@ -147,6 +147,10 @@ body {
   }
 }
 
+.custom-position {
+  object-position: 60% -3px;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -160,4 +164,20 @@ body {
 
 .hover\:underline:hover li:last-of-type p {
   text-decoration: underline;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-0.5px, -0.5px);
+  } 
+  20%, 40%, 60%, 80% {
+    transform: translate(0.5px, 0.5px);
+  }
+}
+
+.shake-animation {
+  animation: shake 3s infinite;
 }
