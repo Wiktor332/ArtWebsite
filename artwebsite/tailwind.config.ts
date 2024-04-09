@@ -37,6 +37,12 @@ module.exports = {
         avocado: {
           50: '#568203',
         },
+        celadon: {
+          50: '#ACE1AF',
+        },
+        darkseagreen: {
+          50: '#8FBC8B',
+        },
         crocodile: { 
           20: '#dedad4',
           30: '#c9c4ba',

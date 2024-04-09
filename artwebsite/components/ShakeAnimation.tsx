@@ -15,7 +15,7 @@ const ShakeAnimation = () => {
   };
 
   return (
-    <a href="" className={"block relative rounded-full overflow-hidden"} style={{ width: '650px', height: '650px' }}>
+    <a href="https://www.instagram.com/bambiogorek/" target='_blank' className={"block relative rounded-full overflow-hidden"} style={{ width: '650px', height: '650px' }}>
       <Image
         src="/images/me/WhatsApp Image 2022-10-24 at 13.47.52.jpeg"
         alt="me"

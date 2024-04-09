@@ -8,7 +8,7 @@ export interface MenuItem {
     children?: MenuItem[];
 }
 
-const menuItem: MenuItem[] = [
+export const menuItem: MenuItem[] = [
     {
         title: "Strona Główna",
         route: "/",
@@ -42,7 +42,7 @@ const menuItem: MenuItem[] = [
 
 export default function Navbar() {
     return (
-        <header className="flexBetween padding-container bg-avocado-50 py-5 z-30">
+        <header className="flexBetween padding-container bg-artichokegreen-50 py-5 z-30">
             <Link href="">
                 <Image src="" width={34} height={34} alt="logo" />
             </Link>

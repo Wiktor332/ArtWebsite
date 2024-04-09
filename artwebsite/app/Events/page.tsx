@@ -2,12 +2,12 @@ import Image from "next/image"
 
 function Events() {
   return (
-    <div className="flex-col"> 
-      <h1 className="font-mono text-3xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
-        <ul className="font-mono text-2xl lis-outsite text-center">
+    <div className="flex flex-col p-5"> 
+      <h1 className="font-mono text-4xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
+        <ul className="font-mono text-2xl list-outside text-center font-semibold">
           
-            <div className="flex p-5">
-              <ul className="flex gap-10">
+            <div className="flex flex-wrap justify-center">
+              <ul className="flex items-center justify-center gap-10 p-5">
                 <li>
                   <Image src="/images/events/1.jpg" alt="photo" width={500} height={500}></Image>
                 </li>
@@ -28,8 +28,8 @@ function Events() {
             <li className="p-3">
             <p>2022 - Udział w Międzynarodowym Plenerze artystycznym w Debrad na Słowacji i poplenerowej wystawie „Together”</p>
             </li>
-            <div className="flex p-5">
-              <ul className="flex gap-10">
+            <div className="flex flex-wrap justify-center">
+              <ul className="flex items-center justify-center gap-10 p-5">
                 <li>
                   <Image src="/images/events/4.jpg" alt="photo" width={500} height={400}></Image>
                 </li>
@@ -53,8 +53,8 @@ function Events() {
             <li className="p-3">
               <p>2018 - Wystawa indywidualna „MAKRO/mikro” z okazji Dni Wąwolnicy, budynek starego przedszkola</p>
             </li>
-            <div className="flex p-5">
-              <ul className="flex gap-10">
+            <div className="flex flex-wrap justify-center">
+              <ul className="flex items-center justify-center gap-10 p-5">
                 <li>
                   <Image src="/images/events/7.jpg" alt="photo" width={500} height={400}></Image>
                 </li>
@@ -84,8 +84,9 @@ function Events() {
             <li className="p-3">
               <p>2005 - Wyróżnienie na VII Ogólnopolskim Biennale Rysunku i Malarstwa uczniów średnich szkół plastycznych; Bielsko Biała.</p>
             </li>
-            <div className="flex p-5">
-              <ul className="flex gap-10">
+
+            <div className="flex flex-wrap justify-center">
+              <ul className="flex items-center justify-center gap-10 p-5">
                 <li>
                   <Image src="/images/events/10.jpg" alt="photo" width={400} height={400}></Image>
                 </li>
