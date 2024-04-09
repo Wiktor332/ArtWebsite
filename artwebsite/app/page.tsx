@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className="text-3xl italic text-center">Natura to instynkt sztuki</h1>
             <ul className="text-xl">
               <li className="p-7">
-                <p>Wychowałam się na wsi wśród pięknych łąk i lasów. Miłość do przyrody jest we mnie od dziecka. Świat natury to przecież niezgłębiony zasób form, kształtów i materii. Dostarcza mi dużo wzruszeń, emocji, pobudza moją wyobraźnię. Nieustannie inspiruje. Niejednokrotnie, niby bohater powieści Goethego, Werter, "upadam po przemocą wspaniałości tych zjawisk".</p>
+                <p>Wychowałam się na wsi wśród pięknych łąk i lasów. Miłość do przyrody jest we mnie od dziecka. Świat natury to przecież niezgłębiony zasób form, kształtów i materii. Dostarcza mi dużo wzruszeń, emocji, pobudza moją wyobraźnię. Nieustannie inspiruje. Niejednokrotnie, niby bohater powieści Goethego, Werter, "upadam pod przemocą wspaniałości tych zjawisk".</p>
               </li>
               <li className="p-7">
                 <p>Jestem zafascynowana światem roślin, ich witalnością, różnorodnym pięknem. Wnikliwa obserwacja natury to istotna częścią mojego życia. Zmienające się pory roku są dla mnie najciekawszym filmem, kórego genialnym reżyserem jest natura.</p>
