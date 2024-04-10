@@ -1,8 +1,10 @@
 'use client';
 import { useState } from "react";
+import { useFormStatus } from "react-dom";
 
 export default function ContactForm() {
     const [loading, setLoading] = useState(false)
+    const { pending } = useFormStatus()
     async function handleSubmit(event: any) {
         event.preventDefault();
         setLoading(true);
@@ -24,6 +26,7 @@ export default function ContactForm() {
 
         if (response.ok) {
             console.log("Message send succesfully");
+            alert("Wiadomość wysłana pomyślnie");
             setLoading(false)
             event.target.name.value = "";
             event.target.email.value = "";
@@ -32,6 +35,7 @@ export default function ContactForm() {
         } 
         if (!response.ok) {
             console.log("Error sendig message");
+            alert("Błąd podczas wysyłania wiadomości");
             setLoading(false)
         }
       }
@@ -69,7 +73,7 @@ export default function ContactForm() {
       <div className="w-full flex justify-center">
         <button 
           type="submit" 
-          className="px-4 py-2 bg-artichokegreen-50 w-32 disabled:bg-gray-300 disabled:text-gray-100 text-black font-semibold text-xl mt-4 font-mono rounded-md"
+          className="px-4 py-2 bg-artichokegreen-50 w-32 disabled:bg-gray-300 disabled:text-gray-100 text-black font-semibold text-xl mt-4 font-mono rounded-md" disabled={pending}
         >
           Wyślij wiadomość
         </button>
