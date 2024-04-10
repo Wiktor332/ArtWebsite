@@ -44,7 +44,7 @@ type MenuItemWithSubMenuProps = {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         custom={height}
-        className={`fixed inset-0 z-50 w-full md:hidden ${
+        className={`fixed inset-0 z-50 w-full lg:hidden ${
           isOpen ? '' : 'pointer-events-none'
         }`}
         ref={containerRef}
@@ -69,8 +69,8 @@ type MenuItemWithSubMenuProps = {
                     <Link
                       href={item?.path || ''}
                       onClick={() => toggleOpen()}
-                      className={`flex w-full text-2xl font-mono ${
-                        item.path === pathname ? 'font-mono' : ''
+                      className={`flex w-full text-2xl font-mono text-white ${
+                        item.path === pathname ? 'font-semibold' : ''
                       }`}
                     >
                       {item.title}
@@ -97,7 +97,7 @@ type MenuItemWithSubMenuProps = {
       onClick={toggle}
       className="pointer-events-auto absolute right-4 top-[14px] z-30"
     >
-      <svg width="23" height="23" viewBox="0 0 23 23">
+      <svg width="34" height="34" viewBox="0 0 23 23">
         <Path
           variants={{
             closed: { d: 'M 2 2.5 L 20 2.5' },
@@ -157,12 +157,12 @@ type MenuItemWithSubMenuProps = {
       <>
         <MenuItem>
           <button
-            className="flex w-full text-2xl font-mono"
+            className="flex w-full text-2xl font-mono text-white"
             onClick={() => setSubMenuOpen(!subMenuOpen)}
           >
             <div className="flex flex-row justify-between w-full items-center">
               <span
-                className={`${pathname}.includes(item.path) ? 'font-mono' : ''`}
+                className={`${pathname.includes(item.path) ? 'font-semibold' : ''}`}
               >
                 {item.title}
               </span>
@@ -172,7 +172,12 @@ type MenuItemWithSubMenuProps = {
             </div>
           </button>
         </MenuItem>
-        <div className="mt-2 ml-2 flex flex-col space-y-2 font-mono text-xl">
+        <motion.div
+          className="mt-2 ml-2 flex flex-col space-y-2 font-mono text-white text-xl"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: subMenuOpen ? 1 : 0, height: subMenuOpen ? 'auto' : 0 }}
+          transition={{ duration: 0.35 }}
+        >
           {subMenuOpen && (
             <>
               {item.children?.map((subItem, subIdx) => {
@@ -192,7 +197,7 @@ type MenuItemWithSubMenuProps = {
               })}
             </>
           )}
-        </div>
+        </motion.div>
       </>
     );
   };
