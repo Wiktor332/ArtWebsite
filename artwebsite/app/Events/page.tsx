@@ -1,8 +1,19 @@
+
+'use client';
+
 import Image from "next/image"
+import { motion} from "framer-motion";
 
 function Events() {
   return (
-    <div className="flex flex-col p-5"> 
+    <motion.div 
+    initial={{ y: 25, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{
+      delay: 0.4,
+      duration: 0.75,
+    }}>
+    <div className="flex flex-col p-5 mt-24"> 
       <h1 className="font-mono text-4xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
         <ul className="font-mono text-2xl list-outside text-center font-semibold">
           
@@ -98,6 +109,7 @@ function Events() {
           
         </ul>
     </div>
+  </motion.div>
   )
 }
 

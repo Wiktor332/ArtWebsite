@@ -54,7 +54,7 @@ export default function ContactForm() {
     
       <div className="w-full flex flex-col p-4">
         <label className="font-mono font-semibold text-2xl text-center mb-2" htmlFor="subject">Temat</label>
-        <input maxLength={100} type="text" required className=" p-4 bg-artichokegreen-50 border-2 border-white rounded-md text-center text-xl font-mono" autoComplete="off" id="subject"/>
+        <input maxLength={100} type="text" required className="p-4 bg-artichokegreen-50 border-2 border-white rounded-md text-center text-xl font-mono" autoComplete="off" id="subject"/>
       </div>
     
       <div className="w-full flex flex-col p-4">
@@ -73,7 +73,7 @@ export default function ContactForm() {
       <div className="w-full flex justify-center">
         <button 
           type="submit" 
-          className="px-4 py-2 bg-artichokegreen-50 w-32 disabled:bg-gray-300 disabled:text-gray-100 text-black font-semibold text-xl mt-4 font-mono rounded-md" disabled={pending}
+          className="px-4 py-2 bg-artichokegreen-50 w-32 disabled:bg-gray-300 disabled:text-gray-100 text-black font-semibold text-xl mt-4 font-mono rounded-md hover:bg-green-800" disabled={pending}
         >
           Wyślij wiadomość
         </button>

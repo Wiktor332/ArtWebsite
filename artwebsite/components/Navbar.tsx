@@ -102,7 +102,7 @@ export const menuItem: NavItem[] = [
 
 export default function Navbar() {
     return (
-        <header className="flexBetween padding-container bg-artichokegreen-50 py-5 z-30">
+        <header className="fixed w-full flexBetween padding-container bg-artichokegreen-50 py-5 z-30">
             <Link href="">
                 <Image src="" width={34} height={34} alt="logo" />
             </Link>
@@ -111,7 +111,7 @@ export default function Navbar() {
                 return item.hasOwnProperty("children") ? (
                     <Dropdown item={item} />
                 ) : (
-                    <Link className="text-2xl relative group font-mono mr-6" href={item?.path || ""}>
+                    <Link className="text-2xl relative group font-mono mr-7" href={item?.path || ""}>
                         {item.title}
                         <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
                     </Link>

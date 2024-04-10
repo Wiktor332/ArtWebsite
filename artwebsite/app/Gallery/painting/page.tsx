@@ -1,10 +1,19 @@
+'use client';
+
 import Link from "next/link"
+import { motion} from "framer-motion";
 import Image from "next/image"
 
 function page() {
   return (
-    
-        <div className="relative flex justify-center mt-20">
+    <motion.div 
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.4,
+        duration: 0.75,
+     }}>
+        <div className="relative flex justify-center mt-24 mb-10 p-4">
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
@@ -89,6 +98,7 @@ function page() {
 
           </ul>
         </div>
+      </motion.div>
   )
 }
 
