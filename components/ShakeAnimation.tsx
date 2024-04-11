@@ -2,14 +2,13 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { prefix } from '@/lib/prefix';
 
 const ShakeAnimation = () => {
 
   return (
     <a href="https://www.instagram.com/bambiogorek/" target='_blank' className={"block relative rounded-full overflow-hidden m-6"}>
       <Image
-        src={`${prefix}/images/me/WhatsApp Image 2022-10-24 at 13.47.52.jpeg`}
+        src="../images/me/WhatsApp Image 2022-10-24 at 13.47.52.jpeg"
         alt="me"
         width={500}
         height={500}
