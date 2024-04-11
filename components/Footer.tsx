@@ -6,7 +6,7 @@ import '../app/globals.css'
 
 function Footer() {
   return (
-    <div className="bg-artichokegreen-50 py-2">
+    <div className="bg-artichokegreen-50 py-2 mt-3">
       <div className="flex flex-row gap-10 w-full p-4 place-content-center">
         <a href='https://www.facebook.com/canaletta.qta?locale=pl_PL' target='_blank'>
           <IconContext.Provider value={{ color: "lightgray", className: "mediaIcon" }}>    

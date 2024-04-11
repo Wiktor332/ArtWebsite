@@ -18,7 +18,7 @@ export default function Contact() {
       duration: 0.75,
     }}>
       <div className="max-auto w-full max-w-2xl px-4 my-24">
-        <h1 className="font-mono text-4xl text-center font-semibold mb-4 mt-10">Formularz kontaktowy:</h1>
+        <h1 className="font-mono text-3xl md:text-4xl text-center font-semibold mb-4 mt-10">Formularz kontaktowy:</h1>
         <ContactForm />
       </div>
     </motion.div>
