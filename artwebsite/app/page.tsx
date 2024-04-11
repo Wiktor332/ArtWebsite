@@ -27,7 +27,7 @@ export default function Home() {
             delay: 0.75,
             duration: 0.8,
           }}>
-        <div className="flex flex-wrap font-mono mt-20 bg-artichokegreen-50 flex p-5">
+        <div className="flex-wrap font-mono mt-20 bg-artichokegreen-50 flex p-5">
           <div className="p-7 font-semibold flex flex-col text-center">
             <h1 className="text-3xl italic text-center">Natura to instynkt sztuki</h1>
             <hr className="mt-4 border-2 border-aspargus-50"></hr>

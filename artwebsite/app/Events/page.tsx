@@ -15,18 +15,18 @@ function Events() {
     }}>
     <div className="flex flex-col p-5 mt-24"> 
       <h1 className="font-mono text-4xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
-        <ul className="font-mono text-2xl list-outside text-center font-semibold">
+        <ul className="font-mono text-xl list-outside font-semibold mb-4">
           
             <div className="flex flex-wrap justify-center">
-              <ul className="flex items-center justify-center gap-10 p-5">
+              <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="/images/events/1.jpg" alt="photo" width={500} height={500}></Image>
+                  <Image src="/images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/2.jpg" alt="photo" width={500} height={500}></Image>
+                  <Image src="/images/events/2.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/3.jpg" alt="photo" width={500} height={500}></Image>
+                  <Image src="/images/events/3.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
               </ul>
             </div>
@@ -40,15 +40,15 @@ function Events() {
             <p>2022 - Udział w Międzynarodowym Plenerze artystycznym w Debrad na Słowacji i poplenerowej wystawie „Together”</p>
             </li>
             <div className="flex flex-wrap justify-center">
-              <ul className="flex items-center justify-center gap-10 p-5">
+              <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="/images/events/4.jpg" alt="photo" width={500} height={400}></Image>
+                  <Image src="/images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/5.jpg" alt="photo" width={400} height={400}></Image>
+                  <Image src="/images/events/5.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/6.jpg" alt="photo" width={600} height={400}></Image>
+                  <Image src="/images/events/6.jpg" alt="photoEvents" width={600} height={400}></Image>
                 </li>
               </ul>
             </div>
@@ -65,15 +65,15 @@ function Events() {
               <p>2018 - Wystawa indywidualna „MAKRO/mikro” z okazji Dni Wąwolnicy, budynek starego przedszkola</p>
             </li>
             <div className="flex flex-wrap justify-center">
-              <ul className="flex items-center justify-center gap-10 p-5">
+              <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="/images/events/7.jpg" alt="photo" width={500} height={400}></Image>
+                  <Image src="/images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/8.jpg" alt="photo" width={500} height={400}></Image>
+                  <Image src="/images/events/8.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/9.jpg" alt="photo" width={500} height={400}></Image>
+                  <Image src="/images/events/9.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
               </ul>
             </div>
@@ -97,12 +97,12 @@ function Events() {
             </li>
 
             <div className="flex flex-wrap justify-center">
-              <ul className="flex items-center justify-center gap-10 p-5">
+              <ul className="flex items-center justify-center gap-20 p5">
                 <li>
-                  <Image src="/images/events/10.jpg" alt="photo" width={400} height={400}></Image>
+                  <Image src="/images/events/10.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="/images/events/11.jpg" alt="photo" width={400} height={400}></Image>
+                  <Image src="/images/events/11.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
               </ul>
             </div>
