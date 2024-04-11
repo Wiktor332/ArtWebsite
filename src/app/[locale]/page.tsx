@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 import Image from "next/image"
 import Link from "next/link"
 import { motion} from "framer-motion";
-import ShakeAnimation from "@/src/app/[locales]/components/ShakeAnimation"
-import ResponsiveContent from "@/src/app/[locales]/components/ResponsiveContent";
+import ShakeAnimation from "@/src/app/[locale]/components/ShakeAnimation"
+import ResponsiveContent from "@/src/app/[locale]/components/ResponsiveContent";
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -71,5 +71,5 @@ export default function Home() {
         </div>
         </motion.div>
     </div>
-  )
+  );
 }

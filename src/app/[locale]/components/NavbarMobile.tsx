@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { motion, useCycle } from "framer-motion";
-import { NavItem, menuItem } from "@/src/app/[locales]/components/Navbar";
+import { NavItem, menuItem } from "@/src/app/[locale]/components/Navbar";
 import { NavItem_Men, MenuItemWithMenuProps } from "@/public/styles/types";
 import { Icon }  from "@iconify/react";
 

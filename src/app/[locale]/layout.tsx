@@ -2,10 +2,10 @@ import {NextIntlClientProvider, useMessages} from 'next-intl';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/src/app/[locales]/components/Navbar";
-import Footer from "@/src/app/[locales]/components/Footer";
-import Dropdown from "@/src/app/[locales]/components/Dropdown";
-import HeaderMobile from "@/src/app/[locales]/components/NavbarMobile";
+import Navbar from "@/src/app/[locale]/components/Navbar";
+import Footer from "@/src/app/[locale]/components/Footer";
+import Dropdown from "@/src/app/[locale]/components/Dropdown";
+import HeaderMobile from "@/src/app/[locale]/components/NavbarMobile";
 
 
 const inter = Inter({ subsets: ["latin"] });
