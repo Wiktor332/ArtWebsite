@@ -18,27 +18,27 @@ function page() {
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
-              <Image src="../images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.jpg" alt="photo" width={750} height={450} />
+              <Image src="../images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} />
               <p className="font-mono font-semibold">Kokon III, 40x40, 2020</p>
             </li>
 
             <li>
-              <Image src="../images/sculpture/Katarzyna Kuta, Kokon II, rzeźba, 50x35, 2020r.,cena 500zł.jpg" alt="photo" width={750} height={550} />
+              <Image src="../images/sculpture/Katarzyna Kuta, Kokon II, rzeźba, 50x35, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-mono font-semibold">Kokon II, 50x35, 2020</p>
             </li>
 
             <li>
-              <Image src="../images/sculpture/Katarzyna Kuta, Kokony - tryptyk, rzeźba, (84x50; 40x40; 50x35) 2020 r., cena 2500 zł.jpg" alt="photo" width={850} height={550} />
+              <Image src="../images/sculpture/Katarzyna Kuta, Kokony - tryptyk, rzeźba, (84x50; 40x40; 50x35) 2020 r., cena 2500 zł.JPG" alt="photo" width={850} height={550} />
               <p className="font-mono font-semibold">Kokon - tryptyk, (84x50; 40x40, 50x35), 2020</p>
             </li>
 
             <li>
-              <Image src="../images/sculpture/Katarzyna Kuta, Wzorzec geograficzny,58x52x30, 2019r,cena 1200zł.jpg" alt="photo" width={550} height={550} />
+              <Image src="../images/sculpture/Katarzyna Kuta, Wzorzec geograficzny,58x52x30, 2019r,cena 1200zł.JPG" alt="photo" width={550} height={550} />
               <p className="font-mono font-semibold">Wzorzec geograficzny, 58x52x30, 2019</p>
             </li>
             
             <li>
-              <Image src="../images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.jpg" alt="photo" width={750} height={550} />
+              <Image src="../images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-mono font-semibold">Kokon I, 84x50, 2020</p>
             </li>
 
