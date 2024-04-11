@@ -15,9 +15,9 @@ function Events() {
     }}>
     <div className="flex flex-col p-5 mt-24"> 
       <h1 className="font-mono text-4xl font-semibold text-center p-7">Ważniejsze osiągnięcia i wystawy:</h1>
-        <ul className="font-mono text-xl list-outside font-semibold mb-4">
+        <ul className="font-mono text-base md:text-xl list-outside font-semibold mb-4">
           
-            <div className="flex flex-wrap justify-center">
+            <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
                   <Image src="./images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
@@ -39,7 +39,7 @@ function Events() {
             <li className="p-3">
             <p>2022 - Udział w Międzynarodowym Plenerze artystycznym w Debrad na Słowacji i poplenerowej wystawie „Together”</p>
             </li>
-            <div className="flex flex-wrap justify-center">
+            <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
                   <Image src="./images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
@@ -64,7 +64,7 @@ function Events() {
             <li className="p-3">
               <p>2018 - Wystawa indywidualna „MAKRO/mikro” z okazji Dni Wąwolnicy, budynek starego przedszkola</p>
             </li>
-            <div className="flex flex-wrap justify-center">
+            <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
                   <Image src="./images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
@@ -96,7 +96,7 @@ function Events() {
               <p>2005 - Wyróżnienie na VII Ogólnopolskim Biennale Rysunku i Malarstwa uczniów średnich szkół plastycznych; Bielsko Biała.</p>
             </li>
 
-            <div className="flex flex-wrap justify-center">
+            <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p5">
                 <li>
                   <Image src="./images/events/10.jpg" alt="photoEvents" width={400} height={400}></Image>
