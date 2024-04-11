@@ -150,7 +150,7 @@ type MenuItemWithSubMenuProps = {
     item,
     toggleOpen,
   }) => {
-    const pathname = usePathname();
+    const pathname = usePathname() as any;
     const [subMenuOpen, setSubMenuOpen] = useState(false);
   
     return (
