@@ -29,9 +29,9 @@ export default function Home() {
           }}>
         <div className="flex-wrap font-mono mt-20 bg-artichokegreen-50 flex p-5">
           <div className="p-7 font-semibold flex flex-col text-center">
-            <h1 className="text-3xl italic text-center">Natura to instynkt sztuki</h1>
+            <h1 className="text-2xl md:text-3xl italic text-center">Natura to instynkt sztuki</h1>
             <hr className="mt-4 border-2 border-aspargus-50"></hr>
-            <ul className="text-xl">
+            <ul className="text-base md:text-xl">
               <li className="p-7">
                 <p>Wychowałam się na wsi wśród pięknych łąk i lasów. Miłość do przyrody jest we mnie od dziecka. Świat natury to przecież niezgłębiony zasób form, kształtów i materii. Dostarcza mi dużo wzruszeń, emocji, pobudza moją wyobraźnię. Nieustannie inspiruje. Niejednokrotnie, niby bohater powieści Goethego, Werter, "upadam pod przemocą wspaniałości tych zjawisk".</p>
               </li>
@@ -61,7 +61,7 @@ export default function Home() {
             duration: 0.8,
           }}>
         <div className="bg-aspargus-50 flex flex-col place-items-center p-7">         
-          <p className="p-5 text-xl text-center font-semibold font-mono">Zapraszam wszystkich, aby weszli w mój świat. To będzie wędrówka w nieznane. Podążanie za instynktem, który każe patrzeć.</p>
+          <p className="p-5 text-base md:text-xl text-center font-semibold font-mono">Zapraszam wszystkich, aby weszli w mój świat. To będzie wędrówka w nieznane. Podążanie za instynktem, który każe patrzeć.</p>
           <Link href="/Gallery" className="text-2xl font-semibold font-mono relative group w-auto">
             Galeria
             <span className="absolute bottom-0 left-0 w-full h-1 bg-black transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform"></span>
