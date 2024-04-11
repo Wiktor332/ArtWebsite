@@ -1,11 +1,11 @@
 'use client';
 
 import { motion} from "framer-motion";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Dropdown from "@/components/Dropdown";
+import Navbar from "@/src/app/[locales]/components/Navbar";
+import Footer from "@/src/app/[locales]/components/Footer";
+import Dropdown from "@/src/app/[locales]/components/Dropdown";
 import { sendContactForm } from "../../lib/api";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/src/app/[locales]/components/ContactForm";
 
 export default function Contact() {
 
