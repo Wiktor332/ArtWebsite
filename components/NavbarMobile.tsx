@@ -162,7 +162,7 @@ type MenuItemWithSubMenuProps = {
           >
             <div className="flex flex-row justify-between w-full items-center">
               <span
-                // className={`${pathname.includes(item.path) ? 'font-semibold' : ''}`}
+                className={`${pathname.includes(item.path) ? 'font-semibold' : ''}`}
               >
                 {item.title}
               </span>
