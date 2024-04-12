@@ -3,6 +3,9 @@
 import Link from "next/link"
 import Dropdown from "./Dropdown"
 import Image from "next/image";
+import "../app/globals.css";
+
+
 // import { NavItem } from "@/public/styles/types";
 
 // export interface MenuItem {

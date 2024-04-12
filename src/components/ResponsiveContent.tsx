@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import ShakeAnimation from './ShakeAnimation';
 import {useTranslations} from 'next-intl';

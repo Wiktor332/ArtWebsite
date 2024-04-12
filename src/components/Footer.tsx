@@ -2,7 +2,7 @@
 
 import { BiLogoFacebookCircle, BiLogoInstagramAlt, BiLogoPinterest } from "react-icons/bi";
 import { IconContext } from "react-icons";
-import '../globals.css';
+import '../app/globals.css';
 
 function Footer() {
   return (
