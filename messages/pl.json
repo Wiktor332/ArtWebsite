@@ -32,5 +32,122 @@
         "p3-2": "Galeria",
 
         "f1-1": "© 2024 Katarzyna Kuta. Wszelkie prawa zastrzeżone"
+    }, 
+
+    "Gallery": {
+
+        "h1-0": "Natura to instynkt sztuki",
+
+        "h1-1": "Zapraszam do odwiedzenia sekcji: Malarstwo",
+
+        "h1-2": "Zapraszam do odwiedzenia sekcji: Rzeźby",
+
+        "h1-3": "Zapraszam do odwiedzenia sekcji: Rysunek"
+    }, 
+
+    "Painting": {
+
+        "pa1": "Jesienna sonata, 80x120, 2023",
+
+        "pa2": "Jesienna sonata 3",
+
+        "pa3": "Nocą w lesie, 100x100, 2022",
+
+        "pa4": "Rzeka, 120x80, 2023",
+
+        "pa5": "Rzeka II, 120x80, 2023",
+
+        "pa6": "Unerwienie, 100x100, 2022",
+
+        "pa7": "Wiosna, 80x120, 2022",
+
+        "pa8": "Z cyklu dynamika natury, 100x160, 2022",
+
+        "pa9": "Duchy leśne, 100x160, 2023",
+
+        "pa10": "Eksplozja, 80x120, 2024",
+
+        "pa11": "Galaktyka, 100x100, 2022",
+
+        "pa12": "Bez tytułu, 100x100, 2023",
+
+        "pa13": "Bez tytułu, 50x50, 2023",
+
+        "pa14": "Bez tytułu",
+
+        "pa15": "Bez tytułu",
+
+        "pa16": "Bez tytułu"
+
+    },
+
+    "Sculpture": {
+
+        "sc1": "Kokon III, 40x40, 2020",
+
+        "sc2": "Kokon II, 50x35, 2020",
+
+        "sc3": "Kokon - tryptyk, (84x50; 40x40, 50x35), 2020",
+
+        "sc4": "Wzorzec geograficzny, 58x52x30, 2019",
+
+        "sc5": "Kokon I, 84x50, 2020"
+    },
+
+    "Sketch": {
+        
+        "sk1": "Bez nazwy, technika własna",
+
+        "sk2": "Bez nazwy, technika własna",
+
+        "sk3": "Bez nazwy, technika własna",
+
+        "sk4": "Bez nazwy, technika własna"
+    },
+
+    "Events": {
+
+        "ev1": "2024 - Wystawa indywidualna „Kolor-faktura-struktura” Biblioteka Miejska w Puławach",
+
+        "ev2": "2023 - Wystawa indywidualna „W głąb natury” Biuro Wystaw Artystycznych w Sandomierzu.",
+
+        "ev3": "2022 - Udział w Międzynarodowym Plenerze artystycznym w Debrad na Słowacji i poplenerowej wystawie „Together”",
+
+        "ev4": "2020 - Zbiorowa wystawa pokonkursowa 25. Wschodniego Salonu Sztuki organizowanego przez Związek Polskich Artystów Plastyków Okręg Lubelski, Centrum Spotkania Kultur.",
+
+        "ev5": "2020 - Wystawa indywidualna „Biomorfy” Galeria Kotłownia , Centrum Sportu i Kultury w Garwolinie",
+
+        "ev6": "2019 - Wystawa indywidualna „Formy natury” Galeria Inter Libros, Biblioteka Miejska w Puławach",
+
+        "ev7": "2018 - Wystawa indywidualna „MAKRO/mikro” z okazji Dni Wąwolnicy, budynek starego przedszkola",
+
+        "ev8": "2016 - Wystawa indywidualna „Drugie życie natury”, Galeria ANEKS, Puławski Ośrodek Kultury Dom Chemika",
+
+        "ev9": "2015 - Wyróżnienie w kategorii malarstwo i rysunek w XII Ogólnopolskim Biennale Twórczości Plastycznej Nauczycieli.",
+
+        "ev10": "2014 - Wystawa indywidualna „Wzrastanie”, Galeria „Piwnica”, Młodzieżowy Dom Kultury w Puławach.",
+
+        "ev11": "2010 - Pierwsze miejsce w konkursie twórczości technicznej - projekt zabawki rozwijającej motorykę dzieci, Rzeszów.",
+
+        "ev12": "2009 - Wystawa zbiorowa „Rysunek i Rzeźba” Galeria „Pentagon”, Radom.",
+
+        "ev13": "2005 - Wyróżnienie na VII Ogólnopolskim Biennale Rysunku i Malarstwa uczniów średnich szkół plastycznych; Bielsko Biała."
+    },
+
+    "Contact": {
+
+        "c0": "Formularz kontaktowy",
+
+        "c1": "Imię Nazwisko",
+
+        "c2": "Enail",
+
+        "c3": "Temat",
+
+        "c4": "Wiadomość",
+
+        "c5": "Wyślij wiadomość"
     }
+
+
 }
