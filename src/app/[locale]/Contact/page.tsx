@@ -1,13 +1,13 @@
 'use client';
 
 import { motion} from "framer-motion";
-import Navbar from "@/src/app/[locales]/components/Navbar";
-import Footer from "@/src/app/[locales]/components/Footer";
-import Dropdown from "@/src/app/[locales]/components/Dropdown";
-import { sendContactForm } from "../../lib/api";
-import ContactForm from "@/src/app/[locales]/components/ContactForm";
+import { sendContactForm } from "@/lib/api";
+import ContactForm from "@/src/components/ContactForm";
+import {useTranslations} from 'next-intl';
+
 
 export default function Contact() {
+  const t = useTranslations('Contact');
 
   return (
     <motion.div 
@@ -17,8 +17,8 @@ export default function Contact() {
       delay: 0.4,
       duration: 0.75,
     }}>
-      <div className="max-auto w-full max-w-2xl px-4 my-24">
-        <h1 className="font-mono text-3xl md:text-4xl text-center font-semibold mb-4 mt-10">Formularz kontaktowy:</h1>
+      <div className="max-auto w-full max-w-2xl px-4 mt-24">
+        <h1 className="font-mono text-3xl md:text-4xl text-center font-semibold mb-4 mt-10">{t('c0')}</h1>
         <ContactForm />
       </div>
     </motion.div>

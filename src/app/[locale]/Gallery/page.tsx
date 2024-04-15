@@ -7,6 +7,8 @@ import { ClassNames } from "@emotion/react";
 import '../../globals.css';
 import {useTranslations} from 'next-intl';
 import {ReactNode} from 'react';
+import NavigationLink from '../../../components/NavigationLink';
+
 
 type Props = {
   children?: ReactNode;
@@ -29,26 +31,26 @@ export default function Gallery({children}: Props) {
         <div className="relative flex justify-center mt-8 p-4">
             <ul className="flex flex-wrap justify-center gap-10">
 
-                <Link href="/Gallery/painting">
+              <NavigationLink href="/Gallery/painting">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery"> 
                       <p className="font-mono text-xl font-semibold pb-3">{t('h1-1')}</p>
-                      <Image src="./images/painting/Wiosna, olej na płótnie, 80x120cm , 2022.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
+                      <Image src="../../images/painting/Wiosna, olej na płótnie, 80x120cm , 2022.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
                   </li>
-                </Link>
+                </NavigationLink>
 
-                <Link href="/Gallery/sculpture">
+                <NavigationLink href="/Gallery/sculpture">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery">
                       <p className="font-mono text-xl font-semibold pb-3">{t('h1-2')}</p>
-                      <Image src="./images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} className="rounded-md"/>
+                      <Image src="../../images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} className="rounded-md"/>
                   </li>
-                </Link>
+                </NavigationLink>
 
-                <Link href="/Gallery/sketch">
+                <NavigationLink href="/Gallery/sketch">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery">
                       <p className="font-mono text-xl font-semibold pb-3">{t('h1-3')}</p>
-                      <Image src="./images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
+                      <Image src="../../images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
                   </li>
-                </Link>
+                </NavigationLink>
 
 
             </ul>

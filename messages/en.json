@@ -1,7 +1,14 @@
 {
+    "LocaleSwitcher":{
+
+        "label": "Change language",
+
+        "locale": "{locale, select, pl {Pl} en {Eng} other {Unknown}}"
+    },
+
     "Home": {
 
-        "n1": "Home Page",
+        "n1": "Home",
 
         "n2": "Gallery",
 
@@ -16,7 +23,7 @@
         "n7": "Contact",
 
         "h1-1": "Kuta Katarzyna",
-
+ 
         "h2-1": "Nature is an instinct of art", 
 
         "p1-1": "Was born in 1985 in Puławy. A graduate of the State High School of Fine Arts in Nałęczów, she studied at the Institute of Fine Arts UJK in Kielce and at the Faculty of Art of the University of Rzeszów. She obtained her diploma in 2001 in the sculpture studio of Prof. Józef Jerzy Kierski. Author of seven solo exhibitions. She takes part in group exhibitions and plein-airs in Poland and abroad. In her work, she is mainly inspired by nature, in whose surroundings she lives. The author's creative interests include painting, sculpture and drawing. To create her sculptures she uses fragile, natural or recycled materials (cartons, paper bags).",
@@ -43,5 +50,80 @@
         "h1-2": "Welcome to the section: Sculpture",
 
         "h1-3": "Welcome to the section: Sketch"
+    },
+
+    "Painting": {
+
+        "pa1": "Jesienna sonata, 80x120, 2023",
+
+        "pa2": "Jesienna sonata 3",
+
+        "pa3": "Nocą w lesie, 100x100, 2022",
+
+        "pa4": "Rzeka, 120x80, 2023",
+
+        "pa5": "Rzeka II, 120x80, 2023",
+
+        "pa6": "Unerwienie, 100x100, 2022",
+
+        "pa7": "Wiosna, 80x120, 2022",
+
+        "pa8": "Z cyklu dynamika natury, 100x160, 2022",
+
+        "pa9": "Duchy leśne, 100x160, 2023",
+
+        "pa10": "Eksplozja, 80x120, 2024",
+
+        "pa11": "Galaktyka, 100x100, 2022",
+
+        "pa12": "Bez tytułu, 100x100, 2023",
+
+        "pa13": "Bez tytułu, 50x50, 2023",
+
+        "pa14": "Bez tytułu",
+
+        "pa15": "Bez tytułu",
+
+        "pa16": "Bez tytułu"
+
+    },
+
+    "Sculpture": {
+
+        "sc1": "Kokon III, 40x40, 2020",
+
+        "sc2": "Kokon II, 50x35, 2020",
+
+        "sc3": "Kokon - tryptyk, (84x50; 40x40, 50x35), 2020",
+
+        "sc4": "Wzorzec geograficzny, 58x52x30, 2019",
+
+        "sc5": "Kokon I, 84x50, 2020"
+    },
+
+    "Sketch": {
+        
+        "sk1": "Bez nazwy, technika własna",
+
+        "sk2": "Bez nazwy, technika własna",
+
+        "sk3": "Bez nazwy, technika własna",
+
+        "sk4": "Bez nazwy, technika własna"
+    },
+
+    "Contact": {
+
+        "c0": "Contact form",
+
+        "c1": "Name",
+
+        "c2": "Enail",
+
+        "c3": "Subject",
+
+        "c4": "Message",
+
+        "c5": "Submit message"
     }
 }

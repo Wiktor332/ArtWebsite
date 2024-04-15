@@ -3,17 +3,20 @@
 import Link from "next/link";
 import { useState } from "react";
 import { NavItem } from './Navbar';
+import {useTranslations} from 'next-intl';
+import NavigationLink from './NavigationLink';
+
 
 
 interface Props {
-    item: NavItem;
+    item?: NavItem;
 }
 
 export default function Dropdown(props: Props) {
     const { item } = props;
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuItems = item?.children ? item.children : [];
-
+    const t = useTranslations('Home');
     const toggle = () => {
         setIsOpen(old => !old);
     }
@@ -26,20 +29,21 @@ export default function Dropdown(props: Props) {
                 <button
                     className="relative group mr-6"
                     onClick={toggle}
-                >{item.title}
+                >{t('n2')}
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
                 </button>
-                <div className={`absolute top-8 z-30 w-auto h-auto flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
-                    {
-                        menuItems.map(item  =>
-                            <Link
-                                key={item.path}
-                                className="hover:bg-artichokegreen-50 w-full hover:text-white p-2 "
-                                href={item?.path || ''}
-                                onClick={toggle}
-                            >{item.title}</Link>
-                        )
-                    }
+                <div className={`absolute top-8 z-30 w-[130px] h-auto flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
+
+                         <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/painting">{t('n3')}
+                         </NavigationLink>
+
+                        <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/sculpture">{t('n4')}
+                        </NavigationLink>
+
+                        <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/sketch">{t('n5')}
+                        </NavigationLink>
+                       
+                        
                 </div>
             </div>
             {
@@ -55,3 +59,5 @@ export default function Dropdown(props: Props) {
         </>
     )
 }
+
+

@@ -8,6 +8,12 @@ import { NavItem, menuItem } from "@/src/components/Navbar";
 import { NavItem_Men, MenuItemWithMenuProps } from "@/public/styles/types";
 import { Icon }  from "@iconify/react";
 import LocalSwitcher from "./LanguageSwitcher";
+import NavigationLink from './NavigationLink';
+import {useTranslations} from 'next-intl';
+import {NextIntlClientProvider, useMessages} from 'next-intl';
+import {locales} from '../config';
+
+
 
 
 type MenuItemWithSubMenuProps = {
@@ -33,65 +39,96 @@ type MenuItemWithSubMenuProps = {
       },
     },
   };
+
+  type Props = {
+    children: ReactNode;
+    params: {locale: string};
+  };
   
-  const HeaderMobile = () => {
+  export function generateStaticParams() {
+    return locales.map((locale) => ({locale}));
+  }
+  
+  
+  const HeaderMobile = ({
+    children,
+    params: { locale },
+  }: Props) => {
+    const messages = useMessages();
     const pathname = usePathname();
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
     const [isOpen, toggleOpen] = useCycle(false, true);
   
     return (
-      <motion.nav
-        initial={false}
-        animate={isOpen ? 'open' : 'closed'}
-        custom={height}
-        className={`fixed inset-0 z-50 w-full lg:hidden ${
-          isOpen ? '' : 'pointer-events-none'
-        }`}
-        ref={containerRef}
-      >
-        <motion.div
-          className="absolute inset-0 right-0 w-full bg-artichokegreen-50"
-          variants={sidebar}
-        />
-        <motion.ul
-          variants={variants}
-          className="absolute grid w-full gap-3 px-10 py-16 max-h-screen overflow-y-auto"
+        <motion.nav
+          initial={false}
+          animate={isOpen ? 'open' : 'closed'}
+          custom={height}
+          className={`fixed inset-0 z-50 w-full lg:hidden ${
+            isOpen ? '' : 'pointer-events-none'
+          }`}
+          ref={containerRef}
         >
-          {menuItem.map((item, idx) => {
-            const isLastItem = idx === menuItem.length - 1; 
-            return (
-              <div key={idx}>
-                {item.submenu ? (
-                  <MenuItemWithSubMenu item={item} toggleOpen={toggleOpen} />
-                ) : (
-                  <MenuItem>
-                    <Link
-                      href={item?.path || ''}
-                      onClick={() => toggleOpen()}
-                      className={`flex w-full text-2xl font-mono text-white  ${
-                        item.path === pathname ? 'font-semibold' : ''
-                      }`}
-                    >
-                      {item.title}
-                    </Link>
-                  </MenuItem>
-                )}
-                {!isLastItem && (
-                  <MenuItem className="my-3 h-1 w-full bg-aspargus-50" />
-                )}
+          <motion.div
+            className="absolute inset-0 right-0 w-full bg-artichokegreen-50"
+            variants={sidebar}
+          />
+          <motion.ul
+            variants={variants}
+            className="absolute grid w-full gap-3 px-10 py-16 max-h-screen overflow-y-auto"
+          >
+            {menuItem.map((item, idx) => {
+              const isLastItem = idx === menuItem.length - 1; 
+              return (
+                <div key={idx}>
+                  {item.submenu ? (
+                    <MenuItemWithSubMenu item={item} toggleOpen={toggleOpen} />
+                  ) : (
+                    <MenuItem>
+                      <Link
+                        href={item?.href || ''}
+                        onClick={() => toggleOpen()}
+                        className={`flex w-full text-2xl font-mono text-white  ${
+                          item.href === pathname ? 'font-semibold' : ''
+                        }`}
+                      >
+                        {item.title}
+                      </Link>
+                    </MenuItem>
+                    // <MenuItem>
+                    //   <NavigationLink href="/">{t('n1')} </NavigationLink>
+                    //   <NavigationLink href="/Events">{t('n6')} </NavigationLink>
+                    //   <NavigationLink href="/Contact">{t('n7')} </NavigationLink>
+                    // </MenuItem>
+                  )}
+                  {!isLastItem && (
+                    <MenuItem className="my-3 h-1 w-full bg-aspargus-50" />
+                  )}
+                  
+                </div>
                 
-              </div>
-              
-            );
-          })}
-          <MenuItem>
-            <hr className="border-2 border-aspargus-50"></hr>
-            <LocalSwitcher />
-          </MenuItem>
-        </motion.ul>
-        <MenuToggle toggle={toggleOpen} />
-      </motion.nav>
+              );
+            })}
+            <MenuItem>
+              <hr className="border-2 border-aspargus-50 mb-6"></hr>
+              <LocalSwitcher />
+            </MenuItem>
+          {/* const isLastItem = idx === menuItem.length - 1; 
+              return (
+                <div key={idx}>
+                  {item.submenu ? (
+                    <MenuItemWithSubMenu item={item} toggleOpen={toggleOpen} />
+                  ) : (
+                    <MenuItem>
+                      <NavigationLink href="/">{t('n1')} </NavigationLink>
+                      <NavigationLink href="/Events">{t('n6')} </NavigationLink>
+                      <NavigationLink href="/Contact">{t('n7')} </NavigationLink>
+                    </MenuItem> */}
+
+          </motion.ul>
+          <MenuToggle toggle={toggleOpen} />
+        </motion.nav>
     );
   };
   
@@ -167,7 +204,7 @@ type MenuItemWithSubMenuProps = {
           >
             <div className="flex flex-row justify-between w-full items-center">
               <span
-                className={`${pathname.includes(item.path) ? 'font-semibold' : ''}`}
+                className={`${pathname.includes(item.href) ? 'font-semibold' : ''}`}
               >
                 {item.title}
               </span>
@@ -189,10 +226,10 @@ type MenuItemWithSubMenuProps = {
                 return (
                   <MenuItem key={subIdx}>
                     <Link
-                      href={subItem.path || ''}
+                      href={subItem.href || ''}
                       onClick={() => toggleOpen()}
                       className={` ${
-                        subItem.path === pathname ? 'font-mono' : ''
+                        subItem.href === pathname ? 'font-mono' : ''
                       }`}
                     >
                       {subItem.title}

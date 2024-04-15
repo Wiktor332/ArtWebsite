@@ -20,13 +20,13 @@ function Events() {
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="./images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
+                  <Image src="../../images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/2.jpg" alt="photoEvents" width={500} height={500}></Image>
+                  <Image src="../../images/events/2.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/3.jpg" alt="photoEvents" width={500} height={500}></Image>
+                  <Image src="../../images/events/3.jpg" alt="photoEvents" width={500} height={500}></Image>
                 </li>
               </ul>
             </div>
@@ -42,13 +42,13 @@ function Events() {
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="./images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/5.jpg" alt="photoEvents" width={400} height={400}></Image>
+                  <Image src="../../images/events/5.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/6.jpg" alt="photoEvents" width={600} height={400}></Image>
+                  <Image src="../../images/events/6.jpg" alt="photoEvents" width={600} height={400}></Image>
                 </li>
               </ul>
             </div>
@@ -67,13 +67,13 @@ function Events() {
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
                 <li>
-                  <Image src="./images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/8.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../images/events/8.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/9.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../images/events/9.jpg" alt="photoEvents" width={500} height={400}></Image>
                 </li>
               </ul>
             </div>
@@ -99,10 +99,10 @@ function Events() {
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p5">
                 <li>
-                  <Image src="./images/events/10.jpg" alt="photoEvents" width={400} height={400}></Image>
+                  <Image src="../../images/events/10.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
                 <li>
-                  <Image src="./images/events/11.jpg" alt="photoEvents" width={400} height={400}></Image>
+                  <Image src="../../images/events/11.jpg" alt="photoEvents" width={400} height={400}></Image>
                 </li>
               </ul>
             </div>

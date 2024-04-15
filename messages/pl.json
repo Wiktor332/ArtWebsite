@@ -1,4 +1,12 @@
 {
+    "LocaleSwitcher":{
+
+        "label": "Change language",
+
+        "locale": "{locale, select, pl {Pl} en {Eng} other {Nieznane}}"
+    },
+
+
     "Home": {
 
         "n1": "Strona Główna",
@@ -136,7 +144,7 @@
 
     "Contact": {
 
-        "c0": "Formularz kontaktowy",
+        "c0": "Formularz kontaktowy:",
 
         "c1": "Imię Nazwisko",
 

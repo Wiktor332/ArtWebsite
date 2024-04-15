@@ -37,7 +37,9 @@ export default function LocaleLayout({
       <body className="bg-aspargus-50">
         <NextIntlClientProvider locale={locale} messages={messages}>
            <Navbar />
-             <HeaderMobile /> 
+             <HeaderMobile children={undefined} params={{
+            locale: ''
+          }} /> 
                <main className="flex flex-col justify-center items-center flex-grow overflow-hidden">
                 {children}
                </main>
