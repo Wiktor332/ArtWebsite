@@ -7,6 +7,7 @@ import { motion, useCycle } from "framer-motion";
 import { NavItem, menuItem } from "@/src/components/Navbar";
 import { NavItem_Men, MenuItemWithMenuProps } from "@/public/styles/types";
 import { Icon }  from "@iconify/react";
+import LocalSwitcher from "./LanguageSwitcher";
 
 
 type MenuItemWithSubMenuProps = {
@@ -58,8 +59,7 @@ type MenuItemWithSubMenuProps = {
           className="absolute grid w-full gap-3 px-10 py-16 max-h-screen overflow-y-auto"
         >
           {menuItem.map((item, idx) => {
-            const isLastItem = idx === menuItem.length - 1; // Check if it's the last item
-  
+            const isLastItem = idx === menuItem.length - 1; 
             return (
               <div key={idx}>
                 {item.submenu ? (
@@ -69,7 +69,7 @@ type MenuItemWithSubMenuProps = {
                     <Link
                       href={item?.path || ''}
                       onClick={() => toggleOpen()}
-                      className={`flex w-full text-2xl font-mono text-white ${
+                      className={`flex w-full text-2xl font-mono text-white  ${
                         item.path === pathname ? 'font-semibold' : ''
                       }`}
                     >
@@ -77,13 +77,18 @@ type MenuItemWithSubMenuProps = {
                     </Link>
                   </MenuItem>
                 )}
-  
                 {!isLastItem && (
                   <MenuItem className="my-3 h-1 w-full bg-aspargus-50" />
                 )}
+                
               </div>
+              
             );
           })}
+          <MenuItem>
+            <hr className="border-2 border-aspargus-50"></hr>
+            <LocalSwitcher />
+          </MenuItem>
         </motion.ul>
         <MenuToggle toggle={toggleOpen} />
       </motion.nav>

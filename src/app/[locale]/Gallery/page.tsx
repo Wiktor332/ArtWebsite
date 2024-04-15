@@ -4,7 +4,7 @@ import { motion} from "framer-motion";
 import Link from "next/link"
 import Image from "next/image"
 import { ClassNames } from "@emotion/react";
-import '../app/globals.css';
+import '../../globals.css';
 import {useTranslations} from 'next-intl';
 import {ReactNode} from 'react';
 

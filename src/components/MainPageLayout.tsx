@@ -6,16 +6,23 @@ import { motion} from "framer-motion";
 import ResponsiveContent from './ResponsiveContent';
 import Link from 'next/link';
 import {ReactNode} from 'react';
+import {locales} from '../config';
+
 
 type Props = {
   children?: ReactNode;
+  params: {locale: string};
 };
 
-export default function MainPageLayout({children}: Props) {
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}
 
+
+export default function MainPageLayout({ children}: Props) {
     const t = useTranslations('Home');
   return (
-    <div className="flex flex-col mt-24">
+    <div className="flex flex-col mt-28">
         <motion.div 
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -68,7 +75,7 @@ export default function MainPageLayout({children}: Props) {
           }}>
         <div className="bg-aspargus-50 flex flex-col place-items-center p-7">         
           <p className="p-5 text-base md:text-xl text-center font-semibold font-mono text-gray-800">{t('p3-1')}</p>
-          <Link href="/Gallery" className="text-2xl font-semibold font-mono relative group w-auto text-gray-800">
+          <Link href={`/${locales}/Gallery`} className="text-2xl font-semibold font-mono relative group w-auto text-gray-800">
           {t('p3-2')}
             <span className="absolute bottom-0 left-0 w-full h-1 bg-gray-800 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </Link>

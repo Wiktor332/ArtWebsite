@@ -5,7 +5,7 @@ export default createMiddleware({
   defaultLocale: 'pl',
   locales,
   pathnames,
-  localePrefix: 'always'
+  localePrefix,
 });
 
 export const config = {
@@ -15,7 +15,7 @@ export const config = {
 
     // Set a cookie to remember the previous locale for
     // all requests that have a locale prefix
-    '/(pl|eng)/:path*',
+    '/(pl|en)/:path*',
 
     // Enable redirects that add missing locales
     // (e.g. `/pathnames` -> `/en/pathnames`)
