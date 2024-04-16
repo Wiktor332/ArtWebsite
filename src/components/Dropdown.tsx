@@ -32,15 +32,15 @@ export default function Dropdown(props: Props) {
                 >{t('n2')}
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
                 </button>
-                <div className={`absolute top-8 z-30 w-[130px] h-auto flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
+                <div className={`absolute top-8 z-30 w-[170px] min-h-[200px] flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
 
-                         <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/painting">{t('n3')}
+                         <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50 w-full p-2" href="/Gallery/painting">{t('n3')}
                          </NavigationLink>
 
-                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/sculpture">{t('n4')}
+                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50 w-full p-2" href="/Gallery/sculpture">{t('n4')}
                         </NavigationLink>
 
-                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/sketch">{t('n5')}
+                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50 w-full p-2" href="/Gallery/sketch">{t('n5')}
                         </NavigationLink>
                        
                         
