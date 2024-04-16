@@ -1,5 +1,6 @@
 'use client';
 
+import {MenuItemWithSubMenu} from './MenuItemWithSubMenu';
 import { useEffect, useRef, useState, ReactNode } from "react";
 import { motion, useCycle } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -8,9 +9,6 @@ import { useTranslations } from 'next-intl';
 import LocalSwitcher from "./LanguageSwitcher";
 import NavigationLink from './NavigationLink';
 
-type MenuItemWithSubMenuProps = {
-    toggleOpen: () => void;
-};
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -43,9 +41,7 @@ const HeaderMobile = () => {
             initial={false}
             animate={isOpen ? 'open' : 'closed'}
             custom={height}
-            className={`fixed inset-0 z-50 w-full lg:hidden ${
-                isOpen ? '' : 'pointer-events-none'
-            }`}
+            className={`fixed inset-0 z-50 w-full lg:hidden ${isOpen ? '' : 'pointer-events-none'}`}
             ref={containerRef}
         >
             <motion.div
@@ -56,19 +52,23 @@ const HeaderMobile = () => {
                 variants={variants}
                 className="absolute grid w-full gap-3 px-10 py-16 max-h-screen overflow-y-auto"
             >
-                
-                <MenuItem className="items-center h-full gap-4 lg:flex text-white mr-4">
-                    <NavigationLink onClick={() => toggleOpen()} href="/">{t('n1')} </NavigationLink>
-                    <hr className="border-2 border-aspargus-50 mb-6"></hr>
-                    <MenuItemWithSubMenu toggleOpen={toggleOpen} />
-                    <hr className="border-2 border-aspargus-50 mb-6"></hr>
-                    <NavigationLink onClick={() => toggleOpen()} href="/Events">{t('n6')} </NavigationLink>
-                    <hr className="border-2 border-aspargus-50 mb-6"></hr>
-                    <NavigationLink onClick={() => toggleOpen()} href="/Contact">{t('n7')} </NavigationLink>
-                    <hr className="border-2 border-aspargus-50 mb-6"></hr>
-                    <LocalSwitcher />
-                </MenuItem>
-
+                    <MenuItem>
+                        <div className="items-center h-full gap-4 lg:flex text-white mr-4">
+                            <NavigationLink onClick={() => toggleOpen()} href="/">{t('n1')}</NavigationLink>
+                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        
+                            <MenuItemWithSubMenu toggleOpen={toggleOpen} />
+                            <hr className="border-2 border-aspargus-50 mb-6" />
+                            
+                            <NavigationLink onClick={() => toggleOpen()} href="/Events">{t('n6')}</NavigationLink>
+                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        
+                            <NavigationLink onClick={() => toggleOpen()} href="/Contact">{t('n7')}</NavigationLink>
+                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        
+                            <LocalSwitcher />
+                        </div>
+                    </MenuItem>
             </motion.ul>
             <MenuToggle toggle={toggleOpen} />
         </motion.nav>
@@ -117,7 +117,7 @@ const Path = (props: any) => (
     />
 );
 
-const MenuItem = ({
+export const MenuItem = ({
     className,
     children,
 }: {
@@ -131,49 +131,6 @@ const MenuItem = ({
     );
 };
 
-const MenuItemWithSubMenu: React.FC<MenuItemWithSubMenuProps> = ({
-    toggleOpen,
-}) => {
-    const pathname = usePathname() as any;
-    const [subMenuOpen, setSubMenuOpen] = useState(false);
-    const t = useTranslations('Home');
-
-    return (
-        <>
-            <MenuItem>
-                <button
-                    className="flex w-full text-2xl font-mono text-white"
-                    onClick={() => setSubMenuOpen(!subMenuOpen)}
-                >
-                    <div className="flex flex-row justify-between w-full items-center">
-                        <span
-                            className={`${pathname.includes('/Gallery') ? 'font-semibold' : ''}`}
-                        >
-                            {t('n2')}
-                        </span>
-                        <div className={`${subMenuOpen && 'rotate-180'}`}>
-                            <Icon icon="lucide:chevron-down" width="24" height="24" />
-                        </div>
-                    </div>
-                </button>
-            </MenuItem>
-            <motion.div
-                className="mt-2 ml-2 flex  space-y-2 font-mono text-white text-xl"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: subMenuOpen ? 1 : 0, height: subMenuOpen ? 'auto' : 0 }}
-                transition={{ duration: 0.35 }}
-            >
-                {subMenuOpen && (
-                    <MenuItem className="flex flex-col">
-                        <NavigationLink onClick={() => toggleOpen()} href="/Gallery/painting">{t('n3')}</NavigationLink>
-                        <NavigationLink onClick={() => toggleOpen()} href="/Gallery/sculpture">{t('n4')}</NavigationLink>
-                        <NavigationLink onClick={() => toggleOpen()} href="/Gallery/sketch">{t('n5')}</NavigationLink>
-                    </MenuItem>
-                )}
-            </motion.div>
-        </>
-    );
-};
 
 const MenuItemVariants = {
     open: {

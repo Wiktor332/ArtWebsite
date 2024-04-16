@@ -96,11 +96,6 @@ type MenuItemWithSubMenuProps = {
                         {item.title}
                       </Link>
                     </MenuItem>
-                    // <MenuItem>
-                    //   <NavigationLink href="/">{t('n1')} </NavigationLink>
-                    //   <NavigationLink href="/Events">{t('n6')} </NavigationLink>
-                    //   <NavigationLink href="/Contact">{t('n7')} </NavigationLink>
-                    // </MenuItem>
                   )}
                   {!isLastItem && (
                     <MenuItem className="my-3 h-1 w-full bg-aspargus-50" />
@@ -114,18 +109,6 @@ type MenuItemWithSubMenuProps = {
               <hr className="border-2 border-aspargus-50 mb-6"></hr>
               <LocalSwitcher />
             </MenuItem>
-          {/* const isLastItem = idx === menuItem.length - 1; 
-              return (
-                <div key={idx}>
-                  {item.submenu ? (
-                    <MenuItemWithSubMenu item={item} toggleOpen={toggleOpen} />
-                  ) : (
-                    <MenuItem>
-                      <NavigationLink href="/">{t('n1')} </NavigationLink>
-                      <NavigationLink href="/Events">{t('n6')} </NavigationLink>
-                      <NavigationLink href="/Contact">{t('n7')} </NavigationLink>
-                    </MenuItem> */}
-
           </motion.ul>
           <MenuToggle toggle={toggleOpen} />
         </motion.nav>
