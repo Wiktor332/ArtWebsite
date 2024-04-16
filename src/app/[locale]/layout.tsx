@@ -4,10 +4,11 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
-import HeaderMobile from "@/src/components/NavbarMobile";
+import HeaderMobile from "@/src/components/NavbarMobile_test";
 import {ReactNode} from "react";
 import {locales} from '../../config';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import Dropdown from '@/src/components/Dropdown';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,9 +38,7 @@ export default function LocaleLayout({
       <body className="bg-aspargus-50">
         <NextIntlClientProvider locale={locale} messages={messages}>
            <Navbar />
-             <HeaderMobile children={undefined} params={{
-            locale: ''
-          }} /> 
+             <HeaderMobile /> 
                <main className="flex flex-col justify-center items-center flex-grow overflow-hidden">
                 {children}
                </main>

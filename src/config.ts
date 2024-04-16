@@ -47,29 +47,29 @@ export const pathnames = {
 
   '/Gallery': {
     en: '/Gallery',
-    pl: '/Galeria'
+    pl: '/Gallery'
   }, 
 
   '/Gallery/painting': {
     en: '/Gallery/painting',
-    pl: '/Galeria/malarstwo'
+    pl: '/Gallery/painting'
   },
   '/Gallery/sculpture': {
     en: '/Gallery/sculpture',
-    pl: '/Galeria/rzeźby'
+    pl: '/Gallery/sculpture'
   },
   '/Gallery/sketch': {
     en: '/Gallery/sketch',
-    pl: '/Galeria/rysunki'
+    pl: '/Gallery/sketch'
   },
 
   '/Events': {
     en: '/Events',
-    pl: '/Wydarzenia'
+    pl: '/Events'
   },
   '/Contact': {
     en: '/Contact',
-    pl: '/Kontakt'
+    pl: '/Contact'
   }
 } satisfies Pathnames<typeof locales>;
 

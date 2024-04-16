@@ -3,8 +3,11 @@
 
 import Image from "next/image"
 import { motion} from "framer-motion";
+import {useTranslations} from 'next-intl';
+  
 
 function Events() {
+  const t = useTranslations('Events');
   return (
     <motion.div 
     initial={{ y: 25, opacity: 0 }}
@@ -14,7 +17,7 @@ function Events() {
       duration: 0.75,
     }}>
     <div className="flex flex-col p-5 mt-24"> 
-      <h1 className="font-mono text-4xl font-semibold p-7 text-gray-800">Ważniejsze osiągnięcia i wystawy:</h1>
+      <h1 className="font-mono text-4xl font-semibold p-7 text-gray-800">{t('ev0')}</h1>
         <ul className="font-mono text-base md:text-xl list-outside font-semibold mb-4 text-gray-800">
           
             <div className="hidden justify-center xl:flex xl:flex-col">
@@ -31,13 +34,13 @@ function Events() {
               </ul>
             </div>
             <li className="p-3">
-              <p>2024 - Wystawa indywidualna „Kolor-faktura-struktura” Biblioteka Miejska w Puławach</p>
+              <p>{t('ev1')}</p>
             </li>
             <li className="p-3">
-              <p>2023 - Wystawa indywidualna „W głąb natury” Biuro Wystaw Artystycznych w Sandomierzu.</p>
+              <p>{t('ev2')}</p>
             </li>
             <li className="p-3">
-            <p>2022 - Udział w Międzynarodowym Plenerze artystycznym w Debrad na Słowacji i poplenerowej wystawie „Together”</p>
+            <p>{t('ev3')}</p>
             </li>
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
@@ -53,16 +56,16 @@ function Events() {
               </ul>
             </div>
             <li className="p-3">
-              <p>2020 - Zbiorowa wystawa pokonkursowa 25. Wschodniego Salonu Sztuki organizowanego przez Związek Polskich Artystów Plastyków Okręg Lubelski, Centrum Spotkania Kultur.</p>
+              <p>{t('ev4')}</p>
             </li>
             <li className="p-3">
-              <p>2020 - Wystawa indywidualna „Biomorfy” Galeria Kotłownia , Centrum Sportu i Kultury w Garwolinie</p>
+              <p>{t('ev5')}</p>
             </li>
             <li className="p-3">
-              <p>2019 - Wystawa indywidualna „Formy natury” Galeria Inter Libros, Biblioteka Miejska w Puławach</p>
+              <p>{t('ev6')}</p>
             </li>
             <li className="p-3">
-              <p>2018 - Wystawa indywidualna „MAKRO/mikro” z okazji Dni Wąwolnicy, budynek starego przedszkola</p>
+              <p>{t('ev7')}</p>
             </li>
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">
@@ -78,22 +81,22 @@ function Events() {
               </ul>
             </div>
             <li className="p-3">
-              <p>2016 - Wystawa indywidualna „Drugie życie natury”, Galeria ANEKS, Puławski Ośrodek Kultury Dom Chemika</p>
+              <p>{t('ev8')}</p>
             </li>
             <li className="p-3">
-              <p>2015 - Wyróżnienie w kategorii malarstwo i rysunek w XII Ogólnopolskim Biennale Twórczości Plastycznej Nauczycieli.</p>
+              <p>{t('ev9')}</p>
             </li>
             <li className="p-3">
-              <p>2014 - Wystawa indywidualna „Wzrastanie”, Galeria „Piwnica”, Młodzieżowy Dom Kultury w Puławach.</p>
+              <p>{t('ev10')}</p>
             </li>
             <li className="p-3">
-              <p>2010 - Pierwsze miejsce w konkursie twórczości technicznej - projekt zabawki rozwijającej motorykę dzieci, Rzeszów.</p>
+              <p>{t('ev11')}</p>
             </li>
             <li className="p-3">
-              <p>2009 - Wystawa zbiorowa „Rysunek i Rzeźba” Galeria „Pentagon”, Radom.</p>
+              <p>{t('ev12')}</p>
             </li>
             <li className="p-3">
-              <p>2005 - Wyróżnienie na VII Ogólnopolskim Biennale Rysunku i Malarstwa uczniów średnich szkół plastycznych; Bielsko Biała.</p>
+              <p>{t('ev13')}</p>
             </li>
 
             <div className="hidden justify-center xl:flex xl:flex-col">

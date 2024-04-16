@@ -34,13 +34,13 @@ export default function Dropdown(props: Props) {
                 </button>
                 <div className={`absolute top-8 z-30 w-[130px] h-auto flex flex-col py-4 bg-aspargus-50 rounded-md ${transClass}`}>
 
-                         <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/painting">{t('n3')}
+                         <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/painting">{t('n3')}
                          </NavigationLink>
 
-                        <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/sculpture">{t('n4')}
+                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/sculpture">{t('n4')}
                         </NavigationLink>
 
-                        <NavigationLink className="hover:bg-artichokegreen-50" href="/Gallery/sketch">{t('n5')}
+                        <NavigationLink onClick={toggle} className="hover:bg-artichokegreen-50" href="/Gallery/sketch">{t('n5')}
                         </NavigationLink>
                        
                         

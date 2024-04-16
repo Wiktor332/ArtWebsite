@@ -43,7 +43,7 @@ export default function ContactForm() {
         }
       }
     return (
-      <form onSubmit={handleSubmit} className="flex flex-col justify-center">
+      <form onSubmit={handleSubmit} className="flex flex-col justify-center mt-10">
 
       <div className="w-full flex flex-col p-4">
         <label className="font-mono font-semibold text-xl md:text-2xl text-center mb-2" htmlFor="name">{t('c1')}</label>

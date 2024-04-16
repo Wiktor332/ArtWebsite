@@ -20,7 +20,7 @@ type Props = {
     children?: ReactNode;
   };
 
-  export const menuItem: NavItem[] = [
+export const menuItem: NavItem[] = [
     {
         title: 'Home',
         href: "/"
@@ -53,22 +53,14 @@ export default function Navigation() {
   const t = useTranslations('Home');
 
   return (
-    <header className="fixed w-full flexBetween padding-container bg-artichokegreen-50 py-2 z-30">
+    <header className="fixed w-full flexBetween padding-container bg-artichokegreen-50 py-6 z-30">
             <Link href="">
-                   <Image src="" width={34} height={34} alt="logo" />
+                   {/* <Image src="" width={34} height={34} alt="logo" /> */}
               </Link>
  
         <div className="hidden items-center h-full gap-4 lg:flex text-white mr-4">
           <NavigationLink href="/">{t('n1')}
           <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0   group-hover:scale-x-100 transition-transform"></span></NavigationLink>
-          {/* <NavigationLink href="/Gallery">{t('n2')}
-          <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0   group-hover:scale-x-100 transition-transform"></span></NavigationLink> */}
-          {/* <NavigationLink href="/Gallery/painting">{t('n3')}
-          </NavigationLink>
-          <NavigationLink href="/Gallery/sculpture">{t('n4')}
-          </NavigationLink>
-          <NavigationLink href="/Gallery/sketch">{t('n5')}
-          </NavigationLink> */}
           <Dropdown />
           <NavigationLink href="/Events">{t('n6')}
           <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0   group-hover:scale-x-100 transition-transform"></span></NavigationLink>

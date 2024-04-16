@@ -76,15 +76,15 @@
 
         "pa11": "Galaktyka, 100x100, 2022",
 
-        "pa12": "Bez tytułu, 100x100, 2023",
+        "pa12": "Untitled, 100x100, 2023",
 
-        "pa13": "Bez tytułu, 50x50, 2023",
+        "pa13": "Untitled, 50x50, 2023",
 
-        "pa14": "Bez tytułu",
+        "pa14": "Untitled",
 
-        "pa15": "Bez tytułu",
+        "pa15": "Untitled",
 
-        "pa16": "Bez tytułu"
+        "pa16": "Untitled"
 
     },
 
@@ -103,13 +103,44 @@
 
     "Sketch": {
         
-        "sk1": "Bez nazwy, technika własna",
+        "sk1": "Untitled, own technique",
 
-        "sk2": "Bez nazwy, technika własna",
+        "sk2": "Untitled, own technique",
 
-        "sk3": "Bez nazwy, technika własna",
+        "sk3": "Untitled, own technique",
 
-        "sk4": "Bez nazwy, technika własna"
+        "sk4": "Untitled, own technique"
+    },
+
+    "Events": {
+
+        "ev0": "Major achievements and exhibitions:",
+
+        "ev1": "2024 - Solo exhibition „Kolor-faktura-struktura” Public Library in Puławy",
+
+        "ev2": "2023 - Solo exhibition „W głąb natury” Art Exhibition Office in Sandomierzu.",
+
+        "ev3": "2022 - Participation in the International Art Open-Air in Debrad, Slovakia and the post-plein-air exhibition „Together”",
+
+        "ev4": "2020 - Group post-competition exhibition of the 25th Eastern Art Salon organized by the Association of Polish Artists, Lublin District, Center for the Meeting of Cultures.",
+
+        "ev5": "2020 - Solo exhibition „Biomorfy” Art Gallery Kotłownia , Sports and Culture Center in Garwolinie",
+
+        "ev6": "2019 - Solo exhibition „Formy natury” Art Gallery Inter Libros, Public Library in Puławy",
+
+        "ev7": "2018 - Solo exhibition „MAKRO/mikro” on the occasion of Wąwolnica Days",
+
+        "ev8": "2016 - Solo exhibition „Drugie życie natury”, Art Gallery ANEKS, Puławski Ośrodek Kultury Dom Chemika",
+
+        "ev9": "2015 - Honorable mention in the painting and drawing category at the 12th National Biennial of Teachers' Art Work.",
+
+        "ev10": "2014 - Solo exhibition „Wzrastanie”, Art Gallery „Piwnica”, Młodzieżowy Dom Kultury w Puławach.",
+
+        "ev11": "2010 - First place in the technical creativity competition - design of a toy developing children's motor skills, Rzeszów.",
+
+        "ev12": "2009 - Collective exhibition „Rysunek i Rzeźba” Art Gallery „Pentagon”, Radom.",
+
+        "ev13": "2005 - Honorable mention at the 7th National Biennial of Drawing and Painting for students of secondary art schools, Bielsko-Biała."
     },
 
     "Contact": {
