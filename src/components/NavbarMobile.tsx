@@ -100,9 +100,7 @@ type MenuItemWithSubMenuProps = {
                   {!isLastItem && (
                     <MenuItem className="my-3 h-1 w-full bg-aspargus-50" />
                   )}
-                  
                 </div>
-                
               );
             })}
             <MenuItem>

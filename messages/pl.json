@@ -3,7 +3,7 @@
 
         "label": "Change language",
 
-        "locale": "{locale, select, pl {Pl} en {Eng} other {Nieznane}}"
+        "locale": "{locale, select, pl {PL} en {ENG} other {Nieznane}}"
     },
 
 
