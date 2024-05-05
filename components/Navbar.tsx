@@ -91,7 +91,7 @@ export const menuItem: NavItem[] = [
         ],
     },
     {
-        title: "Wydarzenia",
+        title: "Wystawy",
         path: "/Events",
     },
     {
