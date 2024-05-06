@@ -17,7 +17,7 @@ export default function Footer({children}: Props) {
   return (
     <div className="bg-artichokegreen-50 py-2 mt-8">
       <div className="flex flex-row gap-10 w-full p-4 place-content-center">
-        <a href='https://www.facebook.com/canaletta.qta?locale=pl_PL' target='_blank'>
+        <a href='https://www.facebook.com/katarzynakutaart' target='_blank'>
           <IconContext.Provider value={{ color: "lightgray", className: "mediaIcon" }}>    
             <BiLogoFacebookCircle style={{width: '40px', height: '40px', cursor: 'pointer'}}/>
           </IconContext.Provider>
