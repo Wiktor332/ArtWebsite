@@ -18,11 +18,11 @@ function Footer() {
             <BiLogoInstagramAlt style={{width: '40px', height: '40px', cursor: 'pointer'}}/>
           </IconContext.Provider>
         </a>
-        <a  href='' target='_blank'>
+        {/* <a  href='' target='_blank'>
           <IconContext.Provider value={{ color: "lightgray", className: "mediaIcon" }}> 
             <BiLogoPinterest style={{width: '40px', height: '40px', cursor: 'pointer'}}/>
           </IconContext.Provider>
-        </a>
+        </a> */}
       </div>
       <div className="w-full">
         <p className="text-center text-white font-mono">© 2024 Katarzyna Kuta. Wszelkie prawa zastrzeżone</p>
