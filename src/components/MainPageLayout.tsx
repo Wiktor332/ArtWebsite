@@ -33,7 +33,7 @@ export default function MainPageLayout() {
             delay: 0.75,
             duration: 0.8,
           }}>
-        <div className="flex-wrap font-mono mt-20 bg-artichokegreen-50 flex p-5">
+        <div className="flex-wrap mt-20 bg-artichokegreen-50 flex p-5">
           <div className="p-7 font-semibold flex flex-col text-center">
             <h1 className="text-2xl md:text-3xl italic text-center text-gray-200">{t('h2-1')}</h1>
             <hr className="mt-4 border-2 border-aspargus-50"></hr>
@@ -51,11 +51,7 @@ export default function MainPageLayout() {
               </li>
             </ul>
           </div>
-          {/* <div className="">
-            <div className="flex items-center mt-20">
-              <Image src="/images/me/_DSC0044.JPG" alt="photo" width={500} height={500} className="rounded-md"/>
-            </div>
-          </div> */}
+          
         </div>
         </motion.div>
 
@@ -67,8 +63,8 @@ export default function MainPageLayout() {
             duration: 0.8,
           }}>
         <div className="bg-aspargus-50 flex flex-col place-items-center p-7">         
-          <p className="p-5 text-base md:text-xl text-center font-semibold font-mono text-gray-800">{t('p3-1')}</p>
-          <NavigationLink href="/Gallery" className="text-2xl font-semibold font-mono relative group w-auto text-gray-800">
+          <p className="p-5 text-base md:text-xl text-center font-semibold text-gray-800">{t('p3-1')}</p>
+          <NavigationLink href="/Gallery" className="text-2xl font-semibold relative group w-auto text-gray-800">
           {t('p3-2')}
             <span className="absolute bottom-0 left-0 w-full h-1 bg-gray-800 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </NavigationLink>

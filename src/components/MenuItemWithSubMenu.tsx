@@ -24,7 +24,7 @@ export const MenuItemWithSubMenu: React.FC<MenuItemWithSubMenuProps> = ({
         <>
             <div>
                 <button
-                    className="flex w-full text-2xl font-mono text-white"
+                    className="flex w-full text-2xl text-white"
                     onClick={() => setSubMenuOpen(!subMenuOpen)}
                 >
                     <div className="flex flex-row justify-between w-full items-center">
@@ -38,7 +38,7 @@ export const MenuItemWithSubMenu: React.FC<MenuItemWithSubMenuProps> = ({
                 </button>
             </div>
             <motion.div
-                className="mt-2 ml-2 flex space-y-2 font-mono text-white text-xl"
+                className="mt-2 ml-2 flex space-y-2 text-white text-xl"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: subMenuOpen ? 1 : 0, height: subMenuOpen ? 'auto' : 0 }}
                 transition={{ duration: 0.35 }}

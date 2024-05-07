@@ -34,7 +34,7 @@ export default function Footer({children}: Props) {
         </a> */}
       </div>
       <div className="w-full">
-        <p className="text-center text-white font-mono">{t('f1-1')}</p>
+        <p className="text-center text-white">{t('f1-1')}</p>
       </div>
     </div>
   );

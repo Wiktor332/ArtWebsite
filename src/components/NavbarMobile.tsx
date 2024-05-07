@@ -89,7 +89,7 @@ type MenuItemWithSubMenuProps = {
                       <Link
                         href={item?.href || ''}
                         onClick={() => toggleOpen()}
-                        className={`flex w-full text-2xl font-mono text-white  ${
+                        className={`flex w-full text-2xl  text-white  ${
                           item.href === pathname ? 'font-semibold' : ''
                         }`}
                       >
@@ -180,7 +180,7 @@ type MenuItemWithSubMenuProps = {
       <>
         <MenuItem>
           <button
-            className="flex w-full text-2xl font-mono text-white"
+            className="flex w-full text-2xl  text-white"
             onClick={() => setSubMenuOpen(!subMenuOpen)}
           >
             <div className="flex flex-row justify-between w-full items-center">
@@ -196,7 +196,7 @@ type MenuItemWithSubMenuProps = {
           </button>
         </MenuItem>
         <motion.div
-          className="mt-2 ml-2 flex flex-col space-y-2 font-mono text-white text-xl"
+          className="mt-2 ml-2 flex flex-col space-y-2  text-white text-xl"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: subMenuOpen ? 1 : 0, height: subMenuOpen ? 'auto' : 0 }}
           transition={{ duration: 0.35 }}
@@ -210,7 +210,7 @@ type MenuItemWithSubMenuProps = {
                       href={subItem.href || ''}
                       onClick={() => toggleOpen()}
                       className={` ${
-                        subItem.href === pathname ? 'font-mono' : ''
+                        subItem.href === pathname ? '' : ''
                       }`}
                     >
                       {subItem.title}

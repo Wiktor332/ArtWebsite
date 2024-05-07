@@ -25,7 +25,7 @@ export default function Dropdown(props: Props) {
 
     return (
         <>
-            <div className="relative text-2xl font-mono">
+            <div className="relative text-2xl">
                 <button
                     className="relative group mr-6"
                     onClick={toggle}

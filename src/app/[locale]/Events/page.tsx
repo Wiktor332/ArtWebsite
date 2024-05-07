@@ -17,8 +17,8 @@ function Events() {
       duration: 0.75,
     }}>
     <div className="flex flex-col p-5 mt-24"> 
-      <h1 className="font-mono text-4xl font-semibold p-7 text-gray-800">{t('ev0')}</h1>
-        <ul className="font-mono text-base md:text-xl list-outside font-semibold mb-4 text-gray-800">
+      <h1 className="text-4xl font-semibold p-7 text-gray-800">{t('ev0')}</h1>
+        <ul className="text-base md:text-xl list-outside font-semibold mb-4 text-gray-800">
           
             <div className="hidden justify-center xl:flex xl:flex-col">
               <ul className="flex items-center justify-center gap-20 p-5">

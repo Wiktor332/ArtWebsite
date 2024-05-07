@@ -16,7 +16,7 @@ export default function NavigationLink<Pathname extends AppPathnames>({
 
   return (
     <Link
-    className="text-2xl relative group font-mono mr-7"
+    className="text-2xl relative group mr-7"
       href={href}
       {...rest}
     >
