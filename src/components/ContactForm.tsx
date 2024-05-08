@@ -19,7 +19,7 @@ export default function ContactForm() {
           message: String(event.target.message.value),
         }
       
-        const response = await fetch ("../../api/contact", {
+        const response = await fetch ("/api/route", {
            method: "POST",
            headers: {
             "Content-Type": "application/json",
@@ -45,22 +45,22 @@ export default function ContactForm() {
     return (
       <form onSubmit={handleSubmit} className="flex flex-col justify-center mt-10">
 
-      <div className="w-full flex flex-col p-4">
+      <div className="w-full flex flex-col p-4" id="name">
         <label className=" font-semibold text-xl md:text-2xl text-center mb-2" htmlFor="name">{t('c1')}</label>
         <input type="text" minLength={3} maxLength={30} required className="p-4 bg-artichokegreen-50 border-2 border-white rounded-md text-center text-xl " autoComplete="off" id="name"/>
       </div>
     
-      <div className="w-full flex flex-col p-4">
+      <div className="w-full flex flex-col p-4" id="email">
         <label className=" font-semibold text-xl md:text-2xl text-center mb-2" htmlFor="email">{t('c2')}</label>
         <input minLength={10} maxLength={150} type="email" required className=" p-4 bg-artichokegreen-50 border-2 border-white rounded-md text-center text-xl " autoComplete="off" id="email"/>
       </div>
     
-      <div className="w-full flex flex-col p-4">
+      <div className="w-full flex flex-col p-4" id="subject">
         <label className=" font-semibold text-xl md:text-2xl text-center mb-2" htmlFor="subject">{t('c3')}</label>
         <input maxLength={100} type="text" required className="p-4 bg-artichokegreen-50 border-2 border-white rounded-md text-center text-xl " autoComplete="off" id="subject"/>
       </div>
     
-      <div className="w-full flex flex-col p-4">
+      <div className="w-full flex flex-col p-4" id="message">
         <label className=" font-semibold text-xl md:text-2xl mb-2 text-center" htmlFor="message">{t('c4')}</label>
         <textarea
           rows={4}
