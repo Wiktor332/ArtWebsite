@@ -10,12 +10,7 @@ import {ReactNode} from 'react';
 import NavigationLink from '../../../components/NavigationLink';
 
 
-type Props = {
-  children?: ReactNode;
-};
-
-
-export default function Gallery({children}: Props) {
+export default function Gallery() {
 
   const t = useTranslations('Gallery');
   return (
@@ -52,11 +47,10 @@ export default function Gallery({children}: Props) {
                   </li>
                 </NavigationLink>
 
-
             </ul>
         </div>
     </div>
     </motion.div>
-  )
+  );
 }
 
