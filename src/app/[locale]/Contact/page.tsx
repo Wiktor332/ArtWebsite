@@ -2,7 +2,7 @@
 
 import { motion} from "framer-motion";
 // import { sendContactForm } from "@/lib/api";
-import ContactForm from "@/src/components/ContactForm";
+import ContactForm from "@/src/app/[locale]/Contact/ContactForm";
 import {useTranslations} from 'next-intl';
 
 
