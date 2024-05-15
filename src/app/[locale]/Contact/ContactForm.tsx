@@ -25,12 +25,12 @@ export default function ContactForm() {
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
         const [subject, setSubject] = useState('');
-        const [message, setMessage] = useState('')
+        const [message, setMessage] = useState('');
 
         const sendMail = async (e: React.FormEvent<HTMLFormElement>) => {
           e.preventDefault();
         
-        const response = await fetch ("api/email/sendmail", {
+        const response = await fetch ("api/email", {
            method: "POST",
            headers: {
             'content-type': 'application/json'
@@ -47,10 +47,7 @@ export default function ContactForm() {
             console.log("Message send succesfully");
             alert("Wiadomość wysłana pomyślnie");
             setLoading(false)
-            // event.target.name.value = "";
-            // event.target.email.value = "";
-            // event.target.subject.value = "";
-            // event.target.message.value = "";
+            
         } 
         if (!response.ok) {
             console.log("Error sendig message");
