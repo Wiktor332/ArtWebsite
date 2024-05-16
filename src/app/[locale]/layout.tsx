@@ -35,7 +35,7 @@ export default function LocaleLayout({
   const messages = useMessages();
   return (
     <html lang={locale}>
-      <body>
+      <body className="bg-aspargus-50">
         <NextIntlClientProvider locale={locale} messages={messages}>
            <Navbar />
              <HeaderMobile /> 
@@ -48,6 +48,3 @@ export default function LocaleLayout({
     </html>
   );
 }
-
-
-// className="bg-aspargus-50"
