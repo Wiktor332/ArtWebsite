@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link"
 import { motion} from "framer-motion";
 import Image from "next/image"
 
@@ -41,6 +40,38 @@ function page() {
               <Image src="../../../../images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-mono font-semibold">Kokon I, 84x50, 2020</p>
             </li>
+
+            <li>
+              <Image src="../../../../images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
+              </li>
+
+              <li>
+               <Image src="../../../../images/events/2.jpg" alt="photoEvents" width={500} height={500}></Image>
+              </li>
+
+                <li>
+                <Image src="../../../../images/events/3.jpg" alt="photoEvents" width={500} height={500}></Image>
+                </li>
+
+                <li>
+                  <Image src="../../../../images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
+                </li>
+                <li>
+                  <Image src="../../../../images/events/5.jpg" alt="photoEvents" width={400} height={400}></Image>
+                </li>
+                <li>
+                  <Image src="../../../../images/events/6.jpg" alt="photoEvents" width={600} height={400}></Image>
+                </li>
+
+                <li>
+                  <Image src="../../../../images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
+                </li>
+                <li>
+                  <Image src="../../../../images/events/8.jpg" alt="photoEvents" width={500} height={400}></Image>
+                </li>
+                <li>
+                  <Image src="../../../../images/events/9.jpg" alt="photoEvents" width={500} height={400}></Image>
+                </li>
 
           </ul>
         </div>
