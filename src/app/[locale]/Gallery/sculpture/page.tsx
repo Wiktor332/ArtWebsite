@@ -42,35 +42,42 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/events/1.jpg" alt="photoEvents" width={500} height={500}></Image>
+              <Image src="../../../../images/events/1.jpg" alt="photoEvents" width={550} height={550}></Image>
               </li>
 
               <li>
-               <Image src="../../../../images/events/2.jpg" alt="photoEvents" width={500} height={500}></Image>
+               <Image src="../../../../images/events/2.jpg" alt="photoEvents" width={550} height={550}></Image>
               </li>
 
                 <li>
-                <Image src="../../../../images/events/3.jpg" alt="photoEvents" width={500} height={500}></Image>
+                <Image src="../../../../images/events/3.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
 
                 <li>
-                  <Image src="../../../../images/events/4.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../../../images/events/4.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/5.jpg" alt="photoEvents" width={400} height={400}></Image>
+                  <Image src="../../../../images/events/5.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/6.jpg" alt="photoEvents" width={600} height={400}></Image>
+                  <Image src="../../../../images/events/6.jpg" alt="photoEvents" width={600} height={500}></Image>
                 </li>
 
                 <li>
-                  <Image src="../../../../images/events/7.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../../../images/events/7.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/8.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../../../images/events/8.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/9.jpg" alt="photoEvents" width={500} height={400}></Image>
+                  <Image src="../../../../images/events/9.jpg" alt="photoEvents" width={550} height={550}></Image>
+                </li>
+
+                <li>
+                  <Image src="../../../../images/events/10.jpg" alt="photoEvents" width={550} height={550}></Image>
+                </li>
+                <li>
+                  <Image src="../../../../images/events/11.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
 
           </ul>
