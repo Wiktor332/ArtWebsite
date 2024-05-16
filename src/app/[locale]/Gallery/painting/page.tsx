@@ -53,7 +53,7 @@ function page() {
 
             <li>
               <Image src="../../../../images/painting/z cyklu _Dynamika natury_ olej na płótnie, 100x160 cm, 2022 rok (1).jpg" alt="photo" width={550} height={550}/>
-              <p className="font-semibold">Z cyklu dynamika natury, 100x160, 2022</p>
+              <p className="font-semibold">Z cyklu "Dynamika natury", 100x160, 2022</p>
             </li>
 
             <li>
