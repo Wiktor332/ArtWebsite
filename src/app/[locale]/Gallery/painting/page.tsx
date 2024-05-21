@@ -17,7 +17,7 @@ function page() {
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
-              <Image src="../../../../images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" width={750} height={550}/>
               <p className="font-semibold">Rzeka II, 120x80, 2023</p>
             </li>
 
@@ -27,12 +27,12 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Nocą w lesie, olej na płótnie 3d, 100x100 cm, 2022.jpg" alt="photo" width={850} height={550} />
+              <Image src="../../../../images/painting/Nocą w lesie, olej na płótnie 3d, 100x100 cm, 2022.jpg" alt="photo" width={550} height={550} />
               <p className="font-semibold">Nocą w lesie, 100x100, 2022</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" width={550} height={550} />
+              <Image src="../../../../images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" width={750} height={550} />
               <p className="font-semibold">Rzeka, 120x80, 2023</p>
             </li>
 
@@ -42,27 +42,27 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/painting/jesienna sonata.jpg olej na płotnie, 80x120 cm , 2023 rok.jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/jesienna sonata.jpg olej na płotnie, 80x120 cm , 2023 rok.jpg" alt="photo" width={550} height={650}/>
               <p className="font-semibold">Jesienna sonata, 80x120, 2023</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Wiosna, olej na płótnie, 80x120cm , 2022.jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/Wiosna, olej na płótnie, 80x120cm , 2022.jpg" alt="photo" width={450} height={650}/>
               <p className="font-semibold">Wiosna, 80x120, 2022</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/z cyklu _Dynamika natury_ olej na płótnie, 100x160 cm, 2022 rok (1).jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/z cyklu _Dynamika natury_ olej na płótnie, 100x160 cm, 2022 rok (1).jpg" alt="photo" width={550} height={850}/>
               <p className="font-semibold">Z cyklu "Dynamika natury", 100x160, 2022</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Duchy leśne, olej na płótnie 3d, 100x160 cm, 2023.jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/Duchy leśne, olej na płótnie 3d, 100x160 cm, 2023.jpg" alt="photo" width={550} height={850}/>
               <p className="font-semibold">Duchy leśne, 100x160, 2023</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Eksplozja, olej na płótnie, 80x120 cm, 2024.jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/Eksplozja, olej na płótnie, 80x120 cm, 2024.jpg" alt="photo" width={450} height={650}/>
               <p className="font-semibold">Eksplozja, 100x100, 2024</p>
             </li>
 
@@ -77,7 +77,7 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/painting/bez tytułu, olej na płótnie, 50x50, 2023 rok.jpg" alt="photo" width={550} height={550}/>
+              <Image src="../../../../images/painting/bez tytułu, olej na płótnie, 50x50, 2023 rok.jpg" alt="photo" width={350} height={350}/>
               <p className="font-semibold">Bez tytułu, 50x50, 2023</p>
             </li>
 

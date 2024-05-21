@@ -25,10 +25,10 @@ export async function POST(request: NextRequest) {
       replyTo: email,
       subject: `Prośba kontaktu od ${name}`,
       html: `
-      <p>Name: ${name}</p>
+      <p>Imię Nazwisko: ${name}</p>
       <p>Email: ${email}</p>
-      <p>Subject: ${subject}</p>
-      <p>Message: ${message}</p>
+      <p>Temat: ${subject}</p>
+      <p>Wiadomość: ${message}</p>
       `,
     };
 

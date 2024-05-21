@@ -18,26 +18,26 @@ export default function Gallery() {
             delay: 0.4,
             duration: 0.75,
           }}>
-    <div className="pb-20 mt-20">
+    <div className="mt-20">
         <h1 className="text-center text-4xl  mt-24 font-semibold italic">{t('h1-0')}</h1>
         <div className="relative flex justify-center mt-8 p-4">
             <ul className="flex flex-wrap justify-center gap-10">
 
-              <NavigationLink href="/Gallery/painting">
+              <NavigationLink href="/Gallery/painting" className="mr-0">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery"> 
                       <p className="text-xl font-semibold pb-3">{t('h1-1')}</p>
                       <Image src="../images/painting/Wiosna, olej na płótnie, 80x120cm , 2022.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
                   </li>
                 </NavigationLink>
 
-                <NavigationLink href="/Gallery/sculpture">
+                <NavigationLink href="/Gallery/sculpture" className="mr-0">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery">
                       <p className="text-xl font-semibold pb-3">{t('h1-2')}</p>
                       <Image src="../images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} className="rounded-md"/>
                   </li>
                 </NavigationLink>
 
-                <NavigationLink href="/Gallery/sketch">
+                <NavigationLink href="/Gallery/sketch" className="mr-0">
                   <li className="border-4 rounded-md p-5 text-center hover:shadow-3xl transition duration-500 ease-in-out containersGallery">
                       <p className="text-xl font-semibold pb-3">{t('h1-3')}</p>
                       <Image src="../images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={750} height={450} className="rounded-md"/>
