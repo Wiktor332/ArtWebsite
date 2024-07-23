@@ -15,7 +15,7 @@ import NavigationLink from './NavigationLink';
 export default function MainPageLayout() {
     const t = useTranslations('Home');
   return (
-    <div className="flex flex-col mt-28">
+    <div className="flex flex-col mt-28 space-evenly">
         <motion.div 
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
