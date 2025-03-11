@@ -19,18 +19,32 @@ function page() {
     <div className="relative flex justify-center mt-28 mb-10 p-4">
           <ul className="flex flex-wrap justify-center gap-20">
 
+<<<<<<< HEAD
             {/* <li>
               <Image src="../../../../images/sketch/57122285_2341238419493488_357912638526586880_n.jpg" alt="photo" width={750} height={450} />
+=======
+            <li>
+              <Image src="/images/sketch/57122285_2341238419493488_357912638526586880_n.jpg" alt="photo" width={750} height={450} />
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               <p className="font-semibold">Bez nazwy, technika własna</p>
             </li> */}
 
             <li>
-              <Image src="../../../../images/sketch/96276823_265373114849488_1487769790796791808_n.jpg" alt="photo" width={750} height={550} />
+              <Image src="/images/sketch/96276823_265373114849488_1487769790796791808_n.jpg" alt="photo" width={750} height={550} />
               <p className="font-semibold">Bez nazwy, technika własna</p>
             </li>
 
             <li>
+<<<<<<< HEAD
               <Image src="../../../../images/sketch/96287397_265373434849456_2046035566985740288_n.jpg" alt="photo" width={550} height={550} />
+=======
+              <Image src="/images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={850} height={550} />
+              <p className="font-semibold">Bez nazwy, technika własna</p>
+            </li>
+
+            <li>
+              <Image src="/images/sketch/96287397_265373434849456_2046035566985740288_n.jpg" alt="photo" width={550} height={550} />
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               <p className="font-semibold">Bez nazwy, technika własna</p>
             </li>
 

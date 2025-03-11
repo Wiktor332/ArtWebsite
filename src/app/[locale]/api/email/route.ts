@@ -8,7 +8,10 @@ export async function POST(request: NextRequest) {
     const { name, email, subject, message } = await request.json();
 
     const user = process.env.user_prod;
+<<<<<<< HEAD
     const pass = process.env.pass_prod;
+=======
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -16,13 +19,17 @@ export async function POST(request: NextRequest) {
       secure: true,
       auth: {
         user: user,
+<<<<<<< HEAD
         pass: pass,
+=======
+        pass: process.env.pass_prod,
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
       },
     });
 
     const mailOption = {
       from: user,
-      to: 'wiktor.stanislaw.cwikla@gmail.com',
+      to: 'katarzynakuta85@gmail.com',
       replyTo: email,
       subject: `Prośba kontaktu od ${name}`,
       html: `

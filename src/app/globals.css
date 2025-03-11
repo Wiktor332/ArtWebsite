@@ -179,7 +179,11 @@ body {
 }
 
 .shake-animation {
+<<<<<<< HEAD
   animation: shake 4s;
+=======
+  animation: shake 3s;
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
 }
 
 .mediaIcon:hover {

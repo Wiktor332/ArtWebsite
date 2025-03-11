@@ -17,31 +17,32 @@ function page() {
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
-              <Image src="../../../../images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} />
+              <Image src="/images/sculpture/katarzyna Kuta, Kokon III, rzeźba, 40x40, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={450} />
               <p className="font-semibold">Kokon III, 40x40, 2020</p>
             </li>
 
             <li>
-              <Image src="../../../../images/sculpture/Katarzyna Kuta, Kokon II, rzeźba, 50x35, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={550} />
+              <Image src="/images/sculpture/Katarzyna Kuta, Kokon II, rzeźba, 50x35, 2020r.,cena 500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-semibold">Kokon II, 50x35, 2020</p>
             </li>
 
             <li>
-              <Image src="../../../../images/sculpture/Katarzyna Kuta, Kokony - tryptyk, rzeźba, (84x50; 40x40; 50x35) 2020 r., cena 2500 zł.JPG" alt="photo" width={850} height={550} />
+              <Image src="/images/sculpture/Katarzyna Kuta, Kokony - tryptyk, rzeźba, (84x50; 40x40; 50x35) 2020 r., cena 2500 zł.JPG" alt="photo" width={850} height={550} />
               <p className="font-semibold">Kokon - tryptyk, (84x50; 40x40, 50x35), 2020</p>
             </li>
 
             <li>
-              <Image src="../../../../images/sculpture/Katarzyna Kuta, Wzorzec geograficzny,58x52x30, 2019r,cena 1200zł.JPG" alt="photo" width={550} height={550} />
+              <Image src="/images/sculpture/Katarzyna Kuta, Wzorzec geograficzny,58x52x30, 2019r,cena 1200zł.JPG" alt="photo" width={550} height={550} />
               <p className="font-semibold">Wzorzec geograficzny, 58x52x30, 2019</p>
             </li>
             
             <li>
-              <Image src="../../../../images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.JPG" alt="photo" width={750} height={550} />
+              <Image src="/images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-semibold">Kokon I, 84x50, 2020</p>
             </li>
 
             <li>
+<<<<<<< HEAD
               <Image src="../../../../images/sculpture/Zanurzenie, galeria.jpeg" alt="photo" width={750} height={550} />
             </li>
 
@@ -56,41 +57,44 @@ function page() {
 
             <li>
               <Image src="../../../../images/events/1.jpg" alt="photoEvents" width={550} height={550}></Image>
+=======
+              <Image src="/images/events/1.jpg" alt="photoEvents" width={550} height={550}></Image>
+>>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               </li>
 
               <li>
-               <Image src="../../../../images/events/2.jpg" alt="photoEvents" width={550} height={550}></Image>
+               <Image src="/images/events/2.jpg" alt="photoEvents" width={550} height={550}></Image>
               </li>
 
                 <li>
-                <Image src="../../../../images/events/3.jpg" alt="photoEvents" width={550} height={550}></Image>
+                <Image src="/images/events/3.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
 
                 <li>
-                  <Image src="../../../../images/events/4.jpg" alt="photoEvents" width={550} height={550}></Image>
+                  <Image src="/images/events/4.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/5.jpg" alt="photoEvents" width={550} height={550}></Image>
+                  <Image src="/images/events/5.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/6.jpg" alt="photoEvents" width={600} height={500}></Image>
-                </li>
-
-                <li>
-                  <Image src="../../../../images/events/7.jpg" alt="photoEvents" width={550} height={550}></Image>
-                </li>
-                <li>
-                  <Image src="../../../../images/events/8.jpg" alt="photoEvents" width={550} height={550}></Image>
-                </li>
-                <li>
-                  <Image src="../../../../images/events/9.jpg" alt="photoEvents" width={550} height={550}></Image>
+                  <Image src="/images/events/6.jpg" alt="photoEvents" width={600} height={500}></Image>
                 </li>
 
                 <li>
-                  <Image src="../../../../images/events/10.jpg" alt="photoEvents" width={550} height={550}></Image>
+                  <Image src="/images/events/7.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
                 <li>
-                  <Image src="../../../../images/events/11.jpg" alt="photoEvents" width={550} height={550}></Image>
+                  <Image src="/images/events/8.jpg" alt="photoEvents" width={550} height={550}></Image>
+                </li>
+                <li>
+                  <Image src="/images/events/9.jpg" alt="photoEvents" width={550} height={550}></Image>
+                </li>
+
+                <li>
+                  <Image src="/images/events/10.jpg" alt="photoEvents" width={550} height={550}></Image>
+                </li>
+                <li>
+                  <Image src="/images/events/11.jpg" alt="photoEvents" width={550} height={550}></Image>
                 </li>
 
           </ul>
