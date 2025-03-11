@@ -49,7 +49,9 @@
 
         "h1-2": "Welcome to the section: Sculpture",
 
-        "h1-3": "Welcome to the section: Other"
+        "h1-3": "Welcome to the section: Other",
+
+        "h1-4": "Land Art"
     },
 
     "Painting": {
@@ -115,6 +117,12 @@
     "Events": {
 
         "ev0": "Major achievements and exhibitions:",
+
+        "ev01": "2024 - Solo exhibition „Heritage Captured on Canvas” as part of the 32nd edition of the European Heritage Days celebrations. Community Cultural Center in Gołąb.",
+
+        "ev02": "2024 - Solo exhibition „Immersion”, Willow Craft Center in Rudnik nad Sanem.",
+
+        "ev03": "2024 - Participation in the International Land Art Symposium, Białystok.",
 
         "ev1": "2024 - Solo exhibition „Kolor-faktura-struktura” Public Library in Puławy",
 

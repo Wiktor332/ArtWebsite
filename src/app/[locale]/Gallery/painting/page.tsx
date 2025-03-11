@@ -13,17 +13,17 @@ function page() {
         delay: 0.4,
         duration: 0.75,
      }}>
-        <div className="relative flex justify-center mt-24 mb-10 p-4">
+        <div className="relative flex justify-center mt-28 mb-10 p-4">
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
-              <Image src="../../../../images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" width={750} height={550}/>
+              <Image src="../../../../images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" width={550} height={450}/>
               <p className="font-semibold">Rzeka II, 120x80, 2023</p>
             </li>
 
             <li>
-              <Image src="../../../../images/painting/jesienna sonata 3.jpg" alt="photo"  width={550} height={550}/>
-              <p className="font-semibold">Jesienna sonata 3</p>
+              <Image src="../../../../images/painting/Ogień i dym, olej na płótnie 100x160 cm.jpeg" alt="photo"  width={750} height={550}/>
+              <p className="font-semibold">Ogień i dym, olej na płótnie 100x160, 2024</p>
             </li>
 
             <li>
@@ -32,7 +32,7 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" width={750} height={550} />
+              <Image src="../../../../images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" width={550} height={550} />
               <p className="font-semibold">Rzeka, 120x80, 2023</p>
             </li>
 
@@ -91,10 +91,10 @@ function page() {
               <p className="font-semibold">Z cyklu "Dynamika natury", 100x160</p>
             </li>
 
-            <li>
+            {/* <li>
               <Image src="../../../../images/painting/1701860698641.jpg" alt="photo" width={550} height={550}/>
               <p className="font-semibold">Z cyklu "Dynamika natury", 100x160</p>
-            </li>
+            </li> */}
 
           </ul>
         </div>

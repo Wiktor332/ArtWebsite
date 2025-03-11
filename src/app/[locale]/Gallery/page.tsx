@@ -19,8 +19,8 @@ export default function Gallery() {
             duration: 0.75,
           }}>
     <div className="mt-20">
-        <h1 className="text-center text-4xl  mt-24 font-semibold italic">{t('h1-0')}</h1>
-        <div className="relative flex justify-center mt-8 p-4">
+        <h1 className="text-center text-4xl  mt-28 font-semibold italic">{t('h1-0')}</h1>
+        <div className="relative flex justify-center mt-2 p-4">
             <ul className="flex flex-wrap justify-center gap-10">
 
               <NavigationLink href="/Gallery/painting" className="mr-0">

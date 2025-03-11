@@ -50,7 +50,9 @@
 
         "h1-2": "Zapraszam do odwiedzenia sekcji: Rzeźby",
 
-        "h1-3": "Zapraszam do odwiedzenia sekcji: Inne"
+        "h1-3": "Zapraszam do odwiedzenia sekcji: Inne",
+
+        "h1-4": "Land Art"
     }, 
 
     "Painting": {
@@ -116,6 +118,12 @@
     "Events": {
 
         "ev0": "Ważniejsze osiągnięcia i wystawy:",
+
+        "ev01": "2024 - Wystawa indywidualna „Dziedzictwo na płótnie zatrzymane” z okazji obchodów 32 edycji Europejskich Dni Dziedzictwa. Gminny Ośrodek Kultury w Gołębiu",
+
+        "ev02": "2024 - Wystawa indywidualna „Zanurzenie” Centrum Wikliniarstwa w Rudniku nad Sanem",
+
+        "ev03": "2024 - Udział w Międzynarodowym Sympozjum Sztuki Land Art, Białystok",
 
         "ev1": "2024 - Wystawa indywidualna „Kolor-faktura-struktura” Biblioteka Miejska w Puławach",
 

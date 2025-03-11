@@ -8,7 +8,8 @@ import { Icon }  from "@iconify/react";
 import { useTranslations } from 'next-intl';
 import LocalSwitcher from "./LanguageSwitcher";
 import NavigationLink from './NavigationLink';
-
+import Link from "next/link";
+import Image from "next/image";
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -52,23 +53,28 @@ const HeaderMobile = () => {
                 variants={variants}
                 className="absolute grid w-full gap-3 px-10 py-16 max-h-screen overflow-y-auto"
             >
-                    <MenuItem>
-                        <div className="items-center h-full gap-4 lg:flex text-white mr-4">
-                            <NavigationLink onClick={() => toggleOpen()} href="/">{t('n1')}</NavigationLink>
-                            <hr className="border-2 border-aspargus-50 mb-6" />
+            {/* <div className='ml-10'>
+                <Link href="/">
+                   <Image src="../../../../images/logo/KasiaKuta.svg" width={50} height={50} alt="logo" />
+                </Link>
+            </div> */}
+                <MenuItem>
+                    <div className="items-center h-full gap-4 lg:flex text-white mr-4">
+                        <NavigationLink onClick={() => toggleOpen()} href="/">{t('n1')}</NavigationLink>
+                        <hr className="border-2 border-aspargus-50 mb-6" />
                         
-                            <MenuItemWithSubMenu toggleOpen={toggleOpen} />
-                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        <MenuItemWithSubMenu toggleOpen={toggleOpen} />
+                        <hr className="border-2 border-aspargus-50 mb-6" />
                             
-                            <NavigationLink onClick={() => toggleOpen()} href="/Events">{t('n6')}</NavigationLink>
-                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        <NavigationLink onClick={() => toggleOpen()} href="/Events">{t('n6')}</NavigationLink>
+                        <hr className="border-2 border-aspargus-50 mb-6" />
                         
-                            <NavigationLink onClick={() => toggleOpen()} href="/Contact">{t('n7')}</NavigationLink>
-                            <hr className="border-2 border-aspargus-50 mb-6" />
+                        <NavigationLink onClick={() => toggleOpen()} href="/Contact">{t('n7')}</NavigationLink>
+                        <hr className="border-2 border-aspargus-50 mb-6" />
                         
-                            <LocalSwitcher />
-                        </div>
-                    </MenuItem>
+                        <LocalSwitcher />
+                    </div>
+                </MenuItem>
             </motion.ul>
             <MenuToggle toggle={toggleOpen} />
         </motion.nav>
@@ -82,7 +88,7 @@ const MenuToggle = ({ toggle }: { toggle: any }) => (
         onClick={toggle}
         className="pointer-events-auto absolute right-4 top-[14px] z-30"
     >
-        <svg width="34" height="34" viewBox="0 0 23 23">
+        <svg width="65" height="65" viewBox="0 0 23 23">
             <Path
                 variants={{
                     closed: { d: 'M 2 2.5 L 20 2.5' },

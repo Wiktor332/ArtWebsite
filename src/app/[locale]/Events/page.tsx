@@ -19,6 +19,16 @@ function Events() {
       <h1 className="text-4xl font-semibold p-7 text-gray-800">{t('ev0')}</h1>
         <ul className="text-base md:text-xl list-outside font-semibold mb-4 text-gray-800">
           
+            
+            <li className="p-3">
+              <p>{t('ev01')}</p>
+            </li>
+            <li className="p-3">
+              <p>{t('ev02')}</p>
+            </li>
+            <li className="p-3">
+              <p>{t('ev03')}</p>
+            </li>
             <li className="p-3">
               <p>{t('ev1')}</p>
             </li>

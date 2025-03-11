@@ -13,7 +13,7 @@ function page() {
           delay: 0.4,
           duration: 0.75,
       }}>
-        <div className="relative flex justify-center mt-24 mb-10 p-4">
+        <div className="relative flex justify-center mt-28 mb-10 p-4">
           <ul className="flex flex-wrap justify-center gap-20">
 
             <li>
@@ -39,6 +39,19 @@ function page() {
             <li>
               <Image src="../../../../images/sculpture/Katarzyna Kuta,Kokon I, rzeźba, wym. 84x50, 2020r.,1500zł.JPG" alt="photo" width={750} height={550} />
               <p className="font-semibold">Kokon I, 84x50, 2020</p>
+            </li>
+
+            <li>
+              <Image src="../../../../images/sculpture/Zanurzenie, galeria.jpeg" alt="photo" width={750} height={550} />
+            </li>
+
+            {/* <li>
+              <Image src="../../../../images/sculpture/leśne.jpeg" alt="photo" width={750} height={250} />
+            </li> */}
+
+            <li>
+              <Image src="../../../../images/sculpture/Zanurzenie, 190x100 cm, technika własna (papier barwiony tuszem), 2024.jpeg" alt="photo" width={750} height={350} />
+              <p className="font-semibold">Zanurzenie, 190x100 cm, technika własna (papier barwiony tuszem), 2024</p>
             </li>
 
             <li>

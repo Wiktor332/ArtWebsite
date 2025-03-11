@@ -120,7 +120,7 @@ type MenuItemWithSubMenuProps = {
       onClick={toggle}
       className="pointer-events-auto absolute right-4 top-[14px] z-30"
     >
-      <svg width="34" height="34" viewBox="0 0 23 23">
+      <svg width="54" height="54" viewBox="0 0 23 23">
         <Path
           variants={{
             closed: { d: 'M 2 2.5 L 20 2.5' },

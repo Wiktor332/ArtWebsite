@@ -22,7 +22,7 @@ export default function Footer({children}: Props) {
             <BiLogoFacebookCircle style={{width: '40px', height: '40px', cursor: 'pointer'}}/>
           </IconContext.Provider>
         </a>
-        <a href='https://www.instagram.com/bambiogorek/' target='_blank'>
+        <a href='https://www.instagram.com/bambiogorek__kasiakuta/' target='_blank'>
           <IconContext.Provider value={{ color: "lightgray", className: "mediaIcon" }}> 
             <BiLogoInstagramAlt style={{width: '40px', height: '40px', cursor: 'pointer'}}/>
           </IconContext.Provider>

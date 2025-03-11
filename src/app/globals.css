@@ -179,7 +179,7 @@ body {
 }
 
 .shake-animation {
-  animation: shake 3s infinite;
+  animation: shake 4s;
 }
 
 .mediaIcon:hover {

@@ -33,7 +33,7 @@ export default function MainPageLayout() {
             delay: 0.75,
             duration: 0.8,
           }}>
-        <div className="flex-wrap mt-20 bg-artichokegreen-50 flex p-5">
+        <div className="flex-wrap mt-px-50 bg-artichokegreen-50 flex p-5">
           <div className="p-7 font-semibold flex flex-col text-center">
             <h1 className="text-2xl md:text-3xl italic text-center text-gray-200">{t('h2-1')}</h1>
             <hr className="mt-4 border-2 border-aspargus-50"></hr>
