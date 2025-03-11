@@ -42,24 +42,7 @@ function page() {
             </li>
 
             <li>
-<<<<<<< HEAD
-              <Image src="../../../../images/sculpture/Zanurzenie, galeria.jpeg" alt="photo" width={750} height={550} />
-            </li>
-
-            {/* <li>
-              <Image src="../../../../images/sculpture/leśne.jpeg" alt="photo" width={750} height={250} />
-            </li> */}
-
-            <li>
-              <Image src="../../../../images/sculpture/Zanurzenie, 190x100 cm, technika własna (papier barwiony tuszem), 2024.jpeg" alt="photo" width={750} height={350} />
-              <p className="font-semibold">Zanurzenie, 190x100 cm, technika własna (papier barwiony tuszem), 2024</p>
-            </li>
-
-            <li>
-              <Image src="../../../../images/events/1.jpg" alt="photoEvents" width={550} height={550}></Image>
-=======
               <Image src="/images/events/1.jpg" alt="photoEvents" width={550} height={550}></Image>
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               </li>
 
               <li>

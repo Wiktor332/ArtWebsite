@@ -13,11 +13,7 @@ function page() {
         delay: 0.4,
         duration: 0.75,
      }}>
-<<<<<<< HEAD
-        <div className="relative flex justify-center mt-28 mb-10 p-4">
-=======
         <div className="flex justify-center mt-24 mb-10 p-4">
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
           <ul className="flex flex-wrap justify-center gap-20">
 
             {/* <li>
@@ -26,23 +22,14 @@ function page() {
             </li> */}
 
             <li>
-<<<<<<< HEAD
-              <Image src="../../../../images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" width={550} height={450}/>
-=======
               <Image src="/images/painting/Rzeka II, olej na płótnie, 120x80 cm, 2023 .jpg" alt="photo" height={500} width={400}/>
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               <p className="font-semibold">Rzeka II, 120x80, 2023</p>
             </li>
 
-            <li>
-<<<<<<< HEAD
-              <Image src="../../../../images/painting/Ogień i dym, olej na płótnie 100x160 cm.jpeg" alt="photo"  width={750} height={550}/>
-              <p className="font-semibold">Ogień i dym, olej na płótnie 100x160, 2024</p>
-=======
+            {/* <li>
               <Image src="/images/painting/jesienna sonata 3.jpg" alt="photo"  width={450} height={450}/>
               <p className="font-semibold">Jesienna sonata 3</p>
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
-            </li>
+            </li> */}
 
             <li>
               <Image src="/images/painting/Nocą w lesie, olej na płótnie 3d, 100x100 cm, 2022.jpg" alt="photo" width={450} height={450} />
@@ -50,11 +37,7 @@ function page() {
             </li>
 
             <li>
-<<<<<<< HEAD
-              <Image src="../../../../images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" width={550} height={550} />
-=======
               <Image src="/images/painting/Rzeka , olej na płótnie, 120x80 cm , 2023 .jpg" alt="photo" height={500} width={400}/>
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               <p className="font-semibold">Rzeka, 120x80, 2023</p>
             </li>
 
@@ -113,15 +96,10 @@ function page() {
               <p className="font-semibold">Z cyklu "Dynamika natury", 100x160</p>
             </li>
 
-<<<<<<< HEAD
             {/* <li>
-              <Image src="../../../../images/painting/1701860698641.jpg" alt="photo" width={550} height={550}/>
-=======
-            <li>
               <Image src="/images/painting/1701860698641.jpg" alt="photo" width={750} height={450}/>
->>>>>>> 2aa329f87700fdc987ed6a7c0828e24bdf4c638f
               <p className="font-semibold">Z cyklu "Dynamika natury", 100x160</p>
-            </li> */}
+            </li>  */}
 
           </ul>
         </div>
