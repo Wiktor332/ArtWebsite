@@ -40,7 +40,7 @@ function page() {
             </li>
 
             <li>
-              <Image src="../../../../images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={850} height={550} />
+              <Image src="/images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={850} height={550} />
               <p className="font-semibold">Bez nazwy, technika własna</p>
             </li>
 
@@ -52,19 +52,19 @@ function page() {
             <ul className="flex flex-wrap rounded-md justify-center text-center border-4 p-2 gap-12">
             <p className="w-full text-2xl font-semibold">{t('h1-4')}</p>
                   <li>
-                    <Image src="../../../../images/me/meLandArt.jpeg" alt="photo" width={700} height={550} />
+                    <Image src="/images/me/meLandArt.jpeg" alt="photo" width={700} height={550} />
                   </li>
 
                   <li>
-                    <Image src="../../../../images/me/meLandArt2.jpeg" alt="photo" width={650} height={700} />
+                    <Image src="/images/me/meLandArt2.jpeg" alt="photo" width={650} height={700} />
                   </li>
 
                   <li>
-                    <Image src="../../../../images/sculpture/leśne.jpeg" alt="photo" width={600} height={600} />
+                    <Image src="/images/sculpture/leśne.jpeg" alt="photo" width={600} height={600} />
                   </li>
 
                   <li>
-                    <Image src="../../../../images/sculpture/leśne2.jpeg" alt="photo" width={600} height={600} />
+                    <Image src="/images/sculpture/leśne2.jpeg" alt="photo" width={600} height={600} />
                   </li>
             </ul>
           </div>
