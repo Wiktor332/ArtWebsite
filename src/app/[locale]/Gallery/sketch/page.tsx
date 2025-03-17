@@ -41,22 +41,22 @@ function page() {
 
             <li>
               <Image src="/images/sketch/96276823_265373114849488_1487769790796791808_n.jpg" alt="photo" width={750} height={550} />
-              <p className="font-semibold">Bez nazwy, technika własna</p>
+              <p className="font-semibold italic mt-[2px]">Bez nazwy, technika własna</p>
             </li>
 
             {/* <li>
               <Image src="/images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={850} height={550} />
-              <p className="font-semibold">Bez nazwy, technika własna</p>
+              <p className="font-semibold italic mt-[2px]">Bez nazwy, technika własna</p>
             </li> */}
 
             <li>
               <Image src="/images/sketch/96287397_265373434849456_2046035566985740288_n.jpg" alt="photo" width={550} height={550} />
-              <p className="font-semibold">Bez nazwy, technika własna</p>
+              <p className="font-semibold italic mt-[2px]">Bez nazwy, technika własna</p>
             </li>
 
             <li>
               <Image src="/images/sketch/96285913_265373044849495_889862827970396160_n.jpg" alt="photo" width={850} height={550} />
-              <p className="font-semibold">Bez nazwy, technika własna</p>
+              <p className="font-semibold italic mt-[2px]">Bez nazwy, technika własna</p>
             </li>
 
           </ul>
@@ -66,8 +66,8 @@ function page() {
           {isLargeDevice ? (
           <div className="relative flex justify-center p-14">
             <ul className="flex flex-wrap rounded-md justify-center text-center border-4 p-2 gap-10">
-            <p className="w-full text-2xl font-semibold">{t('h1-4')}</p>
-                  <li>
+            <h1 className="w-full text-2xl font-semibold">{t('h1-4')}</h1>
+                  <li>  
                     <Image src="/images/me/meLandArt.jpeg" alt="photo" width={700} height={550} />
                   </li>
 
@@ -82,12 +82,12 @@ function page() {
                   <li>
                     <Image src="/images/sculpture/leśne2.jpeg" alt="photo" width={600} height={600} />
                   </li>
-              </ul>
+              </ul>  
             </div>
           ) : (
             <div className="relative flex justify-center p-4">
-              <ul className="flex flex-wrap rounded-md justify-center text-center border-4 p-2 gap-12">
-              <p className="w-full text-2xl font-semibold">{t('h1-4')}</p>
+              <ul className="flex flex-wrap border-4  rounded-md justify-center text-center p-2 gap-12">
+              <h1 className="w-full text-4xl font-semibold">{t('h1-4')}</h1>
                     <li>
                       <Image src="/images/me/meLandArt.jpeg" alt="photo" width={700} height={550} />
                     </li>

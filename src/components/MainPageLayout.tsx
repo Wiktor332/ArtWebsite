@@ -39,15 +39,15 @@ export default function MainPageLayout() {
             <hr className="mt-4 border-2 border-aspargus-50"></hr>
             <ul className="text-base md:text-xl text-gray-200">
               <li className="p-7">
-                <p>{t('p2-1')}</p>
+                <p className='italic'>{t('p2-1')}</p>
               </li>
               <hr className="border-2 border-aspargus-50"></hr>
               <li className="p-7">
-                <p>{t('p2-2')}</p>
+                <p className='italic'>{t('p2-2')}</p>
               </li>
               <hr className="border-2 border-aspargus-50"></hr>
               <li className="p-7">
-                <p>{t('p2-3')}</p>
+                <p className='italic'>{t('p2-3')}</p>
               </li>
             </ul>
           </div>
@@ -63,7 +63,7 @@ export default function MainPageLayout() {
             duration: 0.8,
           }}>
         <div className="bg-aspargus-50 flex flex-col place-items-center p-7">         
-          <p className="p-5 text-base md:text-xl text-center font-semibold text-gray-800">{t('p3-1')}</p>
+          <p className="p-5 italic text-base md:text-xl text-center font-semibold text-gray-800">{t('p3-1')}</p>
           <NavigationLink href="/Gallery" className="text-2xl font-semibold relative group w-auto text-gray-800">
           {t('p3-2')}
             <span className="absolute bottom-0 left-0 w-full h-1 bg-gray-800 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform"></span>

@@ -40,7 +40,7 @@ export default function LocaleSwitcherSelect({
     <div className='rounded flex flex:col items-center h-auto'>
         <MaterialSymbolsLightLanguage />
       <select
-        className="p-0.5 bg-artichokegreen-50 border rounded font-mono text-semibold text-xl text-white z-10"
+        className="p-0.5 bg-artichokegreen-50 border w-[60px] rounded font-mono text-semibold text-xl text-white z-10"
         defaultValue={defaultValue}
         onChange={onSelectChange}
       >
